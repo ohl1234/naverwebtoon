@@ -1,0 +1,31 @@
+@mixin ellip($line-height,$lines) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @if($lines > 1){
+        line-height: $line-height;
+        max-height: $line-height * $lines;
+        display: -webkit-box;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical; /* autoprefixer: off */
+    }@else{
+        white-space: nowrap;
+    }
+}
+
+@mixin comic-img {
+    background-image: url(../images/sp-comic-bg.png);
+    background-repeat: no-repeat;
+    background-size: 330px 312px;
+    // ::after ::before
+    vertical-align: top;
+    display: inline-block;
+}
+
+@mixin badge-img {
+    background-image: url(../images/sp-badge-bg.png);
+    background-repeat: no-repeat;
+    background-size: 136px 124px;
+    // ::after ::before
+    vertical-align: top;
+    display: inline-block;
+}
