@@ -5,12 +5,12 @@
         margin: 9px 11px 0;
         font-size: 18px;
         font-weight: 600;
-    }
-    .logo-gnb {
-        display: flex;
-        align-items: center;
-        color: #ccc;
-        a {
+        .logo-gnb {
+            display: flex;
+            align-items: center;
+            color: #ccc;
+        }
+        .link-logo {
             position: relative;
             padding: 8px 8px 6px 6px;
             &::after {
@@ -44,76 +44,76 @@
                 color: #000;
             }
         }
-    }
-    .link-logo {}
-    .link-wrap {
-        display: flex;
-        align-items: center;
-        a {
-            padding: 8px;
-            &::after {
-                content: '';
-                @include comic-img;
+        .link-wrap {
+            display: flex;
+            align-items: center;
+            a {
+                padding: 8px;
+                &::after {
+                    content: '';
+                    @include comic-img;
+                }
             }
         }
-    }
-    .link-search {
-        &::after {
-            width: 16px;
-            height: 16px;
-            background-position: -298px -237px;
+        .link-search {
+            &::after {
+                width: 16px;
+                height: 16px;
+                background-position: -298px -237px;
+            }
         }
-    }
-    .link-mypage {
-        &::after {
-            width: 29px;
-            height: 16px;
-            background-position: -180px -245px;
+        .link-mypage {
+            &::after {
+                width: 29px;
+                height: 16px;
+                background-position: -180px -245px;
+            }
         }
     }
 
-    .group-lnb {}
-    .lnb-area {
-        margin-top: 2px;
-        border-bottom: 1px solid #ebebeb;
-        text-align: center;
-        background: #fff;
-    }
-    .lnb-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 558px;
-        height: 40px;
-    }
-    .lnb-item {
-        &:first-of-type {
-            .tab-lnb {
-                padding-left: 22px;
+    .group-lnb {
+        .lnb-area {
+            margin-top: 2px;
+            border-bottom: 1px solid #ebebeb;
+            text-align: center;
+            background: #fff;
+        }
+        .lnb-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 558px;
+            height: 40px;
+        }
+        .lnb-item {
+            &:first-of-type {
+                .tab-lnb {
+                    padding-left: 22px;
+                }
+            }
+            &:last-of-type {
+                .tab-lnb {
+                    padding-right: 22px;
+                }
+            }
+            &.active {
+                span {
+                    color: #00d564;
+                    border-bottom: 2px solid #00d564;
+                }
             }
         }
-        &:last-of-type {
-            .tab-lnb {
-                padding-right: 22px;
-            }
-        }
-        &.active {
-            span {
-                color: #00d564;
-                border-bottom: 2px solid #00d564;
-            }
-        }
-    }
-    .tab-lnb {
-        display: block;
-        padding: 0 12px;
-        font-size: 15px;
-        font-weight: 600;
-        span {
+        .tab-lnb {
             display: block;
-            margin: 0 3px;
-            line-height: 40px;
-            height: 42px;
+            padding: 0 12px;
+            font-size: 15px;
+            font-weight: 600;
+            span {
+                display: block;
+                margin: 0 3px;
+                line-height: 40px;
+                height: 42px;
+            }
         }
     }
 
@@ -123,32 +123,30 @@
         padding: 0 2px;
         border-bottom: 1px solid #ebebeb;
         background: #f8f8f9;
-    }
-    .weekday-list {
-        display: flex;
-        justify-content: space-between;
-    }
-    .weekday-item {
-        height: 40px;
-        line-height: 40px;
-        padding: 0 4px;
-        &.active {
-            .link-weekday {
-                background-color: #00d564;
-                color: #fff;
+        .weekday-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        .weekday-item {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 4px;
+            &.active {
+                .link-weekday {
+                    background-color: #00d564;
+                    color: #fff;
+                }
             }
         }
+        .link-weekday {
+            display: block;
+            margin: 9px 0;
+            padding: 0px 7px;
+            font-size: 15px;
+            font-weight: 600;
+            height: 23px;
+            line-height: 23px;
+            border-radius: 12px;
+        }
     }
-    .link-weekday {
-        display: block;
-        margin: 9px 0;
-        padding: 0px 7px;
-        font-size: 15px;
-        font-weight: 600;
-        height: 23px;
-        line-height: 23px;
-        border-radius: 12px;
-    }
-
-
 }
