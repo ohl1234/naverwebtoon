@@ -56,7 +56,12 @@ ul, ol {
     @세팅구역
 */
 body {
-  font-size: 16px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.25em;
+  color: #000;
+  word-wrap: break-word;
+  word-break: break-all;
   background-color: #fff;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -190,4 +195,142 @@ input, select, button, fieldset {
   clip: rect(0, 0, 0, 0);
   margin: -1px;
   overflow: hidden;
+}
+
+.header .group-flex1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 9px 11px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.header .logo-gnb {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+}
+.header .logo-gnb a {
+  position: relative;
+  padding: 8px 8px 6px 6px;
+}
+.header .logo-gnb a::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 15px;
+  background-color: #eee;
+}
+.header .logo-gnb a:first-of-type::after, .header .logo-gnb a:last-of-type::after {
+  content: none;
+}
+.header .logo-gnb a:first-of-type {
+  padding: 5px 5px 4px;
+}
+.header .logo-gnb a:first-of-type::before {
+  content: "";
+  width: 17px;
+  height: 16px;
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -298px -182px;
+}
+.header .logo-gnb a.active {
+  color: #000;
+}
+.header .link-wrap {
+  display: flex;
+  align-items: center;
+}
+.header .link-wrap a {
+  padding: 8px;
+}
+.header .link-wrap a::after {
+  content: "";
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+}
+.header .link-search::after {
+  width: 16px;
+  height: 16px;
+  background-position: -298px -237px;
+}
+.header .link-mypage::after {
+  width: 29px;
+  height: 16px;
+  background-position: -180px -245px;
+}
+.header .lnb-area {
+  margin-top: 2px;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+  background: #fff;
+}
+.header .lnb-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 558px;
+  height: 40px;
+}
+.header .lnb-item:first-of-type .tab-lnb {
+  padding-left: 22px;
+}
+.header .lnb-item:last-of-type .tab-lnb {
+  padding-right: 22px;
+}
+.header .lnb-item.active span {
+  color: #00d564;
+  border-bottom: 2px solid #00d564;
+}
+.header .tab-lnb {
+  display: block;
+  padding: 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header .tab-lnb span {
+  display: block;
+  margin: 0 3px;
+  line-height: 40px;
+  height: 42px;
+}
+.header .group-weekday {
+  display: none;
+  height: 41px;
+  padding: 0 2px;
+  border-bottom: 1px solid #ebebeb;
+  background: #f8f8f9;
+}
+.header .weekday-list {
+  display: flex;
+  justify-content: space-between;
+}
+.header .weekday-item {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 4px;
+}
+.header .weekday-item.active .link-weekday {
+  background-color: #00d564;
+  color: #fff;
+}
+.header .link-weekday {
+  display: block;
+  margin: 9px 0;
+  padding: 0px 7px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 23px;
+  line-height: 23px;
+  border-radius: 12px;
 }
