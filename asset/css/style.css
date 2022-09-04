@@ -310,11 +310,10 @@ input, select, button, fieldset {
 .header .group-lnb .tab-lnb span {
   display: block;
   margin: 0 3px;
-  line-height: 40px;
+  line-height: 42px;
   height: 42px;
 }
 .header .group-weekday {
-  display: none;
   height: 41px;
   padding: 0 2px;
   border-bottom: 1px solid #ebebeb;
@@ -896,14 +895,164 @@ input, select, button, fieldset {
   color: #999;
 }
 
+#weekday .sc-new .swiper-slide {
+  padding-left: 16px;
+}
+#weekday .sc-new .swiper-slide::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#weekday .sc-new .thumbnail {
+  position: relative;
+  width: 111px;
+  height: 111px;
+  float: left;
+  overflow: hidden;
+  border-radius: 2px;
+}
+#weekday .sc-new .thumbnail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+#weekday .sc-new .thumbnail img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10%;
+  right: -10%;
+  width: auto;
+  height: 100%;
+  margin: auto;
+}
+#weekday .sc-new .info-box {
+  overflow: hidden;
+  padding: 11px 23px 0 23px;
+}
+#weekday .sc-new .info-box > * {
+  display: block;
+}
+#weekday .sc-new .webtoon-tit {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 16px;
+}
+#weekday .sc-new .writer {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 3px;
+  font-size: 13px;
+  color: #999;
+}
+#weekday .sc-new .desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 19px;
+  max-height: 38px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; /* autoprefixer: off */
+  margin-top: 13px;
+  font-size: 13px;
+  color: #4c4c4c;
+}
+#weekday .sc-webtoon .webtoon-list {
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#weekday .sc-webtoon .webtoon-item {
+  width: calc((100% - 10px) / 3);
+  margin-bottom: 15px;
+}
+#weekday .sc-webtoon .info-box {
+  margin-top: 7px;
+}
+#weekday .sc-webtoon .info-box > * {
+  display: block;
+}
+#weekday .sc-webtoon .webtoon-tit {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 600;
+}
+#weekday .sc-webtoon .badge {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#weekday .sc-webtoon .badge > i {
+  background-image: url(../images/sp-badge-bg.png);
+  background-repeat: no-repeat;
+  background-size: 136px 124px;
+  vertical-align: top;
+  display: inline-block;
+  width: 17px;
+  height: 11px;
+  margin: 2px 0 0 2px;
+}
+#weekday .sc-webtoon .ic-break {
+  background-position: 0 -113px;
+}
+#weekday .sc-webtoon .writer {
+  margin-top: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #999;
+}
+#weekday .sc-webtoon .like {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #999;
+}
+#weekday .sc-webtoon .link-shortcut {
+  position: relative;
+  display: block;
+  height: 46px;
+  padding: 0 16px 0 48px;
+  font-size: 13px;
+  letter-spacing: -0.43px;
+  line-height: 46px;
+  border-top: 1px solid #eee;
+}
+#weekday .sc-webtoon .link-shortcut::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -268px -142px;
+}
+
 .container {
-  padding-top: 86px;
   width: 100%;
   background-color: #eee;
 }
+.container > * {
+  padding-top: 86px;
+}
 
 #home {
-  display: block;
+  display: none;
 }
 #home .webtoon-banner .link-banner {
   display: block;
@@ -1035,7 +1184,79 @@ input, select, button, fieldset {
 }
 
 #weekday {
-  display: none;
+  display: block;
+  padding-top: 127px;
+}
+#weekday .sc-new {
+  padding: 20px 0;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+#weekday .sc-new .title-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 10px;
+}
+#weekday .sc-webtoon {
+  background-color: #fff;
+}
+#weekday .sc-webtoon .header-area {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8px 0;
+}
+#weekday .sc-webtoon .select-tit {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  padding: 7px 11px 7px 7px;
+  font-size: 12px;
+  font-weight: 500;
+}
+#weekday .sc-webtoon .select-tit::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-color: #000 transparent transparent;
+  border-style: solid;
+  border-width: 5px 3.5px;
+}
+#weekday .sc-webtoon .select-box {
+  position: relative;
+  padding: 7px 11px 7px 7px;
+  margin-right: auto;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  line-height: 13px;
+  opacity: 0;
+}
+#weekday .sc-webtoon .link-like {
+  position: relative;
+  padding: 5px 8px 4px 17px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+  line-height: 15px;
+  letter-spacing: -0.025em;
+}
+#weekday .sc-webtoon .link-like::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -255px -271px;
 }
 
 #end {

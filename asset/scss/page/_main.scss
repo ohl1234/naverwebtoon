@@ -1,10 +1,12 @@
 .container {
-    padding-top: 86px;
     width: 100%;
     background-color: #eee;
+    & > * {
+        padding-top: 86px;
+    }
 }
 #home {
-    display: block;
+    display: none;
     .webtoon-banner {
         .link-banner {
             display: block;
@@ -146,7 +148,75 @@
     }
 }
 #weekday {
-    display: none;
+    display: block;
+    padding-top: 127px;
+    .sc-new {
+        padding: 20px 0;
+        background-color: #fff;
+        margin-bottom: 5px;
+        .title-area {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 16px 10px;
+        }
+    }
+    .sc-webtoon {
+        background-color: #fff;
+        .header-area {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 8px 0;
+        }
+        .select-tit {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            padding: 7px 11px 7px 7px;
+            font-size: 12px;
+            font-weight: 500;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 13px;
+                right: 0;
+                width: 0;
+                height: 0;
+                border-color: #000 transparent transparent;
+                border-style: solid;
+                border-width: 5px 3.5px;
+            }
+        }
+        .select-box {
+            position: relative;
+            padding: 7px 11px 7px 7px;
+            margin-right: auto;
+            font-size: 12px;
+            font-weight: 500;
+            color: #000;
+            line-height: 13px;
+            opacity: 0;
+        }
+        .link-like {
+            position: relative;
+            padding: 5px 8px 4px 17px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #999;
+            line-height: 15px;
+            letter-spacing: -.025em;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 14px;
+                height: 14px;
+                @include comic-img;
+                background-position: -255px -271px;
+            }
+        }
+    }
 }
 #end {
     display: none;
