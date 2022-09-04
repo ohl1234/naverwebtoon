@@ -1197,6 +1197,36 @@ input, select, button, fieldset {
   justify-content: space-between;
   padding: 0 16px 10px;
 }
+#weekday .sc-new .swiper {
+  position: relative;
+}
+#weekday .sc-new .swiper-pagination-fraction {
+  font-size: 0;
+  width: auto;
+}
+#weekday .sc-new .swiper-pagination-total {
+  color: #999;
+  font-size: 14px;
+}
+#weekday .sc-new .swiper-pagination-total::before {
+  content: "";
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -318px -102px;
+  width: 8px;
+  height: 9px;
+  margin: 4px 3px 0;
+}
+#weekday .sc-new .swiper-pagination-current {
+  color: #000;
+  font-size: 14px;
+}
+#weekday .sc-new .fraction > * {
+  font-weight: 700;
+}
 #weekday .sc-webtoon {
   background-color: #fff;
 }

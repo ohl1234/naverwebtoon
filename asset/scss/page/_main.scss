@@ -159,6 +159,34 @@
             justify-content: space-between;
             padding: 0 16px 10px;
         }
+        .swiper{
+            position: relative;
+            &-pagination-fraction {
+                font-size: 0;
+                width: auto;
+            }
+            &-pagination-total {
+                color: #999;
+                font-size: 14px;
+                &::before {
+                    content: "";
+                    @include comic-img;
+                    background-position: -318px -102px;
+                    width: 8px;
+                    height: 9px;
+                    margin: 4px 3px 0;
+                }
+            }
+            &-pagination-current {
+                color: #000;
+                font-size: 14px;
+            }
+        }
+        .fraction {
+            & > * {
+                font-weight: 700;
+            }
+        }
     }
     .sc-webtoon {
         background-color: #fff;
