@@ -34,4 +34,13 @@ $(function(){
         type: "fraction",
       }
     });
+    const swiper5 = new Swiper(".slide5 .swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 0,
+      loop:true,
+      pagination: {
+        el: ".fraction3",
+        type: "fraction",
+      }
+    });
 })
