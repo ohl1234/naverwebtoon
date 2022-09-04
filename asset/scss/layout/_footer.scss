@@ -51,7 +51,7 @@
     }
     .group-info {
         margin-top: 16px;
-        .relative-list {
+        .relative-link {
             display: flex;
             justify-content: center;
             .link-rel {
@@ -77,5 +77,134 @@
                 }
             }
         }
+        .biz-info-wrap {
+            display: none;
+            padding-top: 14px;
+            font-size: 11px;
+            line-height: 16px;
+            &.active {
+                display: block;
+            }
+        }
+        .btn-info {
+            font-size: 12px;
+            line-height: 15px;
+            .ic-arrow {
+                @include comic-img;
+                width: 10px;
+                height: 6px;
+                margin-left: 3px;
+                vertical-align: 1px;
+                background-position: -318px -149px;
+            }
+            &.active {
+                .ic-arrow {
+                    vertical-align: 2px;
+                    background-position: -318px -157px;
+                }
+            }
+        }
+        .link-biz-info {
+            display: inline-block;
+            margin: 11px 0 8px;
+            border-bottom: 1px solid hsla(0,0%,60%,.55);
+            line-height: 12px;
+            color: #999;
+        }
+        .info-desc {
+            font-size: 11px;
+            line-height: 16px;
+            padding: 6px 0 22px;
+            text-align: center;
+        }
+        .group-webtoon-corp {
+            padding-top: 18px;
+            text-align: center;
+            border-top: 1px solid #e1e1e1;
+            margin: 0 -10px;
+            .corp-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 355px;
+                margin: 0 auto;
+            }
+            .corp-item {
+                display: flex;
+                margin-top: 2px;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 1px;
+                    height: 8px;
+                    margin: 3px 8px 0;
+                    background-color: #ccc;
+                }
+                &:nth-child(3n) {
+                    &::after {
+                        content: none;
+                    }
+                }
+                strong {
+                    font-weight: 700;
+                }
+            }
+            .link-corp {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            .link-webtoon-corp {
+                @include comic-img;
+                margin-top: 5px;
+                width: 132px;
+                height: 9px;
+                background-position: 0 -196px;
+                
+            }
+        }
+        .group-naver-corp {
+            padding-top: 16px;
+            .corp-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 260px;
+                margin: 0 auto;
+            }
+            .corp-item {
+                display: flex;
+                margin-top: 2px;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 1px;
+                    height: 8px;
+                    margin: 3px 8px 0;
+                    background-color: #ccc;
+                }
+                &:nth-child(3),
+                &:nth-child(5) {
+                    &::after {
+                        content: none;
+                    }
+                }
+                strong {
+                    font-weight: 700;
+                }
+            }
+            .link-corp {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            .link-naver-corp {
+                @include comic-img;
+                margin-top: 5px;
+                width: 77px;
+                height: 9px;
+                background-position: -134px -196px;
+                
+            }
+        }
+        
     }
 }

@@ -281,6 +281,7 @@ input, select, button, fieldset {
   align-items: center;
   max-width: 558px;
   height: 40px;
+  margin: 0 auto;
 }
 .header .group-lnb .lnb-item:first-of-type .tab-lnb {
   padding-left: 22px;
@@ -305,7 +306,6 @@ input, select, button, fieldset {
   height: 42px;
 }
 .header .group-weekday {
-  display: none;
   height: 41px;
   padding: 0 2px;
   border-bottom: 1px solid #ebebeb;
@@ -386,11 +386,11 @@ input, select, button, fieldset {
 .footer .group-info {
   margin-top: 16px;
 }
-.footer .group-info .relative-list {
+.footer .group-info .relative-link {
   display: flex;
   justify-content: center;
 }
-.footer .group-info .relative-list .link-rel {
+.footer .group-info .relative-link .link-rel {
   position: relative;
   padding: 10px 8px 9px 9px;
   font-size: 14px;
@@ -398,7 +398,7 @@ input, select, button, fieldset {
   color: #444;
   line-height: 15px;
 }
-.footer .group-info .relative-list .link-rel::after {
+.footer .group-info .relative-link .link-rel::after {
   content: "";
   position: absolute;
   top: 12px;
@@ -407,6 +407,137 @@ input, select, button, fieldset {
   height: 10px;
   background: #ccc;
 }
-.footer .group-info .relative-list .link-rel:last-of-type::after {
+.footer .group-info .relative-link .link-rel:last-of-type::after {
   content: none;
+}
+.footer .group-info .biz-info-wrap {
+  display: none;
+  padding-top: 14px;
+  font-size: 11px;
+  line-height: 16px;
+}
+.footer .group-info .biz-info-wrap.active {
+  display: block;
+}
+.footer .group-info .btn-info {
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer .group-info .btn-info .ic-arrow {
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  margin-left: 3px;
+  vertical-align: 1px;
+  background-position: -318px -149px;
+}
+.footer .group-info .btn-info.active .ic-arrow {
+  vertical-align: 2px;
+  background-position: -318px -157px;
+}
+.footer .group-info .link-biz-info {
+  display: inline-block;
+  margin: 11px 0 8px;
+  border-bottom: 1px solid hsla(0deg, 0%, 60%, 0.55);
+  line-height: 12px;
+  color: #999;
+}
+.footer .group-info .info-desc {
+  font-size: 11px;
+  line-height: 16px;
+  padding: 6px 0 22px;
+  text-align: center;
+}
+.footer .group-info .group-webtoon-corp {
+  padding-top: 18px;
+  text-align: center;
+  border-top: 1px solid #e1e1e1;
+  margin: 0 -10px;
+}
+.footer .group-info .group-webtoon-corp .corp-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 355px;
+  margin: 0 auto;
+}
+.footer .group-info .group-webtoon-corp .corp-item {
+  display: flex;
+  margin-top: 2px;
+}
+.footer .group-info .group-webtoon-corp .corp-item::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 8px;
+  margin: 3px 8px 0;
+  background-color: #ccc;
+}
+.footer .group-info .group-webtoon-corp .corp-item:nth-child(3n)::after {
+  content: none;
+}
+.footer .group-info .group-webtoon-corp .corp-item strong {
+  font-weight: 700;
+}
+.footer .group-info .group-webtoon-corp .link-corp {
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer .group-info .group-webtoon-corp .link-webtoon-corp {
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 5px;
+  width: 132px;
+  height: 9px;
+  background-position: 0 -196px;
+}
+.footer .group-info .group-naver-corp {
+  padding-top: 16px;
+}
+.footer .group-info .group-naver-corp .corp-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 260px;
+  margin: 0 auto;
+}
+.footer .group-info .group-naver-corp .corp-item {
+  display: flex;
+  margin-top: 2px;
+}
+.footer .group-info .group-naver-corp .corp-item::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 8px;
+  margin: 3px 8px 0;
+  background-color: #ccc;
+}
+.footer .group-info .group-naver-corp .corp-item:nth-child(3)::after, .footer .group-info .group-naver-corp .corp-item:nth-child(5)::after {
+  content: none;
+}
+.footer .group-info .group-naver-corp .corp-item strong {
+  font-weight: 700;
+}
+.footer .group-info .group-naver-corp .link-corp {
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer .group-info .group-naver-corp .link-naver-corp {
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 5px;
+  width: 77px;
+  height: 9px;
+  background-position: -134px -196px;
 }
