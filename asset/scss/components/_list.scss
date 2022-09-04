@@ -1,7 +1,9 @@
 #home {
     .sc-rising {
+        .swiper-slide {
+            
+        }
         .webtoon-list {
-            width: 411px;
             padding-left: 16px;
         }
         .webtoon-item {
@@ -89,16 +91,19 @@
         }
     }
     .sc-new {
+        .swiper {
+            padding: 0px 83px 0px 16px;
+        }
         .swiper-slide {
             height: 130px;
             margin-top: 12px;
         }
         .link-new {
+            display: block;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            overflow: hidden;
             background-color: #ffc08d;
+            border-radius: 2px;
             &::after {
                 content: "";
                 position: absolute;
@@ -109,12 +114,28 @@
                 border: 1px solid rgba(0,0,0,.06);
             }
         }
+        .content-wrap {
+            position: relative;
+            max-width: 296px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
         .info-box {
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            transform: translateY(-50%);
+            z-index: 2;
             & > * {
                 display: block;
             }
         }
         .thumb-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
             width: 163px;
             height: 130px;
         }
@@ -142,6 +163,9 @@
 
     }
     .sc-age {
+        .swiper-slide {
+        
+        }
         .webtoon-list {
             width: 411px;
             padding-left: 16px;
