@@ -1,6 +1,7 @@
 @mixin ellip($line-height,$lines) {
     text-overflow: ellipsis;
     overflow: hidden;
+
     @if($lines > 1){
         line-height: $line-height;
         max-height: $line-height * $lines;

@@ -1,0 +1,302 @@
+#home {
+    .sc-rising {
+        .webtoon-list {
+            width: 411px;
+            padding-left: 16px;
+        }
+        .webtoon-item {
+            & + li {
+                margin-top: 6px;
+            }
+        }
+        .link-webtoon {
+            display: block;
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+        .thumbnail {
+            position: relative;
+            float: left;
+            overflow: hidden;
+            width: 78px;
+            height: 55px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid rgba(0,0,0,.06);
+            }
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -10%;
+                right: -10%;
+                width: auto;
+                height: 100%;
+                margin: auto;
+            }
+        }
+        .info-box {
+            display: flex;
+            overflow: hidden;
+            height: 100%;
+            //padding-left: 38px;
+        }
+        .ranking-num {
+            display: block;
+            width: 38px;
+            padding-top: 11px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+        }
+        .webtoon-tit {
+            @include ellip(18px,1);
+            font-weight: 600;
+        }
+        .badge {
+            display: inline-block;
+            vertical-align: middle;
+            white-space: nowrap;
+            & > i {
+                @include badge-img;
+                margin-top: 1px;
+                width: 22px;
+                height: 12px;
+            }
+        }
+        .ic-up {
+            background-position: -30px -85px;
+        }
+        .ic-cuttoon {
+            background-position: 0 -99px;
+        }
+        .desc {
+            @include ellip(15px,1);
+            margin-top: 3px;
+            font-size: 12px;
+            color: #999;
+        }
+    }
+    .sc-new {
+        .swiper-slide {
+            height: 130px;
+            margin-top: 12px;
+        }
+        .link-new {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffc08d;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid rgba(0,0,0,.06);
+            }
+        }
+        .info-box {
+            & > * {
+                display: block;
+            }
+        }
+        .thumb-box {
+            width: 163px;
+            height: 130px;
+        }
+        .webtoon-tit {
+            @include ellip(19px,2);
+            width: 118px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .writer {
+            @include ellip(15px,1);
+            width: 120px;
+            margin-top: 2px;
+            font-size: 12px;
+            opacity: .4;
+        }
+        .desc {
+            @include ellip(16px,2);
+            margin-top: 6px;
+            width: 118px;
+            font-size: 12px;
+            color: #4c4c4c;
+            letter-spacing: -.2px;
+        }
+
+    }
+    .sc-age {
+        .webtoon-list {
+            width: 411px;
+            padding-left: 16px;
+        }
+        .webtoon-item {
+            & + li {
+                margin-top: 6px;
+            }
+        }
+        .link-webtoon {
+            display: block;
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+        .thumbnail {
+            position: relative;
+            float: left;
+            overflow: hidden;
+            width: 78px;
+            height: 55px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid rgba(0,0,0,.06);
+                content: "";
+            }
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -10%;
+                right: -10%;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+            }
+        }
+        .info-box {
+            display: flex;
+            overflow: hidden;
+            height: 100%;
+            //padding-left: 38px;
+        }
+        .ranking-num {
+            display: block;
+            width: 38px;
+            padding-top: 11px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+        }
+        .webtoon-tit {
+            @include ellip(18px,1);
+            font-weight: 600;
+        }
+        .writer {
+            display: block;
+            @include ellip(15px,1);
+            margin-top: 3px;
+            font-size: 12px;
+            color: #999;
+        }
+        .badge {
+            display: inline-block;
+            vertical-align: middle;
+            white-space: nowrap;
+            & > i {
+                @include badge-img;
+                margin-top: 1px;
+                width: 22px;
+                height: 12px;
+            }
+        }
+        .ic-up {
+            background-position: -30px -85px;
+        }
+        .ic-cuttoon {
+            background-position: 0 -99px;
+        }
+    }
+    .sc-collection {
+        overflow: hidden;
+        .webtoon-list {
+            display: flex;
+            padding-top: 10px;
+            padding-left: 16px;
+            overflow-x: scroll;
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        .webtoon-item {
+            & + li {
+                padding-left: 8px;
+            }
+            &:last-of-type {
+                padding-right: 8px;
+            }
+        }
+        .link-webtoon {
+            display: block;
+        }
+        .thumbnail {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            overflow: hidden;
+            border-radius: 2px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid rgba(0,0,0,.06);
+                border-radius: 2px;
+            }
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -10%;
+                right: -10%;
+                width: auto;
+                height: 100%;
+                margin: auto;
+            }
+        }
+        .info-box {
+            & > * {
+                display: block;
+                @include ellip(1.25em,1);
+            }
+        }
+        .webtoon-tit {
+            width: 120px;
+            padding-top: 7px;
+            font-size: 14px;
+        }
+        .writer {
+            margin-top: 1px;
+            font-size: 12px;
+            color: #999;
+        }
+    }
+}

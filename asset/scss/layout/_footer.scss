@@ -5,9 +5,14 @@
     text-align: center;
     .group-banner {
         width: 100%;
+        background-color: #fff;
         .link-banner {
             display: block;
             width: 100%;
+            img {
+                max-width: 355px;
+                margin: 0 auto;
+            }
         }
     }
     .group-fnb {

@@ -1,0 +1,130 @@
+.container {
+    padding-top: 127px;
+    width: 100%;
+    background-color: #eee;
+}
+#home {
+    display: block;
+    .webtoon-banner {
+        .link-banner {
+            display: block;
+            width: 100%;
+            height: 100%;
+            //background-color: #25a3ff;
+            img {
+                display: block;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+        }
+        &.banner1 {
+            .link-banner {
+                background-color: #25a3ff;
+            }
+        }
+        &.banner2 {
+            .link-banner {
+                background-color: #8bf1fe;
+            }
+        }
+        &.banner3 {
+            .link-banner {
+                background-color: #233f4d;
+            }
+        }
+    }
+    .sc-rising {
+        background-color: #fff;
+        margin-bottom: 10px;
+        padding: 40px 0 20px;
+        .title-area {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .tab-area {
+            a {
+                position: relative;
+                padding: 1px 9px 0 8px;
+                font-size: 13px;
+                line-height: 16px;
+                font-weight: 500;
+                color: #999;
+            }
+        }
+        .btn-webtoon {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 3px;
+                right: -2px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 1px;
+                height: 11px;
+                background-color: #eee;
+            }
+            &.active {
+                color: #000;
+            }
+        }
+    }
+    .group-wrap {
+        background-color: #fff;
+        padding: 20px 0;
+    }
+    .sc-new {
+        padding: 20px 0;
+        .title-area {
+            display: flex;
+            justify-content: space-between;
+        }
+        .pagination {
+            font-weight: 700;
+            display: flex;
+        }
+        .current {}
+        .total {
+            color: #999;
+            &::before {
+                content: "";
+                @include comic-img;
+                background-position: -318px -102px;
+                width: 8px;
+                height: 9px;
+                margin: 4px 3px 0;
+            }
+        }
+    }
+    .sc-age {
+        padding-top: 20px;
+        .tab-area {
+            padding-left: 2px;
+            margin:5px 0;
+        }
+        .btn-tab {
+            display: inline-block;
+            padding: 5px 13px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #999;
+            line-height: 16px;
+            &.active {
+                color: #000;
+            }
+        }
+    }
+    .sc-collection {
+        padding: 40px 0 20px;
+        background-color: #fff;
+    }
+}
+#weekday {
+    display: none;
+}
+#end {
+    display: none;
+}
+#bestchallenge {
+    display: none;
+}
