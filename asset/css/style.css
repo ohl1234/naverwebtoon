@@ -1706,7 +1706,7 @@ input, select, button, fieldset {
 }
 #end .group-category .category-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow-x: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -1881,7 +1881,7 @@ input, select, button, fieldset {
 }
 #bestchallenge .group-category .category-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow-x: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

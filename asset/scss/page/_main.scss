@@ -294,7 +294,7 @@
         background: #f8f8f9;
         .category-list {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             overflow-x: scroll;
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
@@ -462,7 +462,7 @@
         background: #f8f8f9;
         .category-list {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             overflow-x: scroll;
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
