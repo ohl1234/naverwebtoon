@@ -397,6 +397,31 @@
             width: calc((100% - 10px) / 3);
             margin-bottom: 15px;
         }
+        .thumbnail {
+            position: relative;
+            overflow: hidden;
+            padding-top: 129.7297%;
+            border-radius: 2px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid rgba(0,0,0,.06);
+            }
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -10%;
+                right: -10%;
+                width: auto;
+                height: 100%;
+                margin: auto;
+            }
+        }
         .info-box {
             margin-top: 7px;
             & > * {
@@ -528,6 +553,31 @@
             width: calc((100% - 10px) / 3);
             margin-bottom: 15px;
         }
+        .thumbnail {
+            position: relative;
+            overflow: hidden;
+            padding-top: 129.7297%;
+            border-radius: 2px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid rgba(0,0,0,.06);
+            }
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -10%;
+                right: -10%;
+                width: auto;
+                height: 100%;
+                margin: auto;
+            }
+        }
         .info-box {
             margin-top: 7px;
             & > * {
@@ -582,6 +632,162 @@
                 @include comic-img;
                 background-position: -268px -142px;
             }
+        }
+    }
+}
+#bestchallenge {
+    .sc-best {
+        .best-list {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 16px;
+        }
+        .best-item {
+            width: calc((100% - 10px) / 3);
+        }
+        .thumbnail {
+            position: relative;
+            overflow: hidden;
+            padding-top: 81.095%;
+            border-radius: 2px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid rgba(0,0,0,.06);
+            }
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -10%;
+                right: -10%;
+                width: auto;
+                height: 100%;
+                margin: auto;
+            }
+        }
+        .info-box {
+            margin-top: 7px;
+            & > * {
+                display: block;
+            }
+        }
+        .webtoon-tit {
+            @include ellip(1.25em,1);
+        }
+        .writer {
+            @include ellip(16px,1);
+            margin-top: 1px;
+            font-size: 12px;
+            color: #999;
+        }
+    }
+    .sc-webtoon {
+        .webtoon-item {
+            padding: 8px 16px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .link-webtoon {
+            &::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+        .thumbnail {
+            position: relative;
+            overflow: hidden;
+            float: left;
+            width: 111px;
+            height: 90px;
+            margin-right: 12px;
+            padding-top: 0;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 1px solid rgba(0,0,0,.06);
+            }
+            img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -10%;
+                right: -10%;
+                width: auto;
+                height: 100%;
+                margin: auto;
+            }
+        }
+        .info-box {
+            overflow: hidden;
+            min-height: 84px;
+            padding-top: 6px;
+            & > * {
+                display: block;
+            }
+        }
+        .webtoon-tit {
+            @include ellip(1.25em,1);
+        }
+        .badge {
+            display: inline-block;
+            vertical-align: middle;
+            white-space: nowrap;
+            & > i {
+                @include badge-img;
+                width: 23px;
+                height: 14px;
+                margin: 2px 0 0 2px;
+            }
+            .ic-up {
+                background-position: -30px -85px;
+            }
+        }
+        .writer {
+            @include ellip(15px,1);
+            display: block;
+            margin: 3px 0 0 1px;
+            font-size: 12px;
+            color: #999;
+        }
+        .desc {
+            @include ellip(1.25em,1);
+            display: block;
+            margin-top: 4px;
+            font-size: 13px;
+            color: #999;
+        }
+        .detail {
+            margin-top: 10px;
+            line-height: 12px;
+            font-size: 12px;
+            & * {
+                display: inline-block;
+            }
+        }
+        .score {
+            margin: 0 5px 0 -2px;
+            color: #ff3a46;
+            .ic-score {
+                width: 12px;
+                height: 12px;
+                @include comic-img;
+                margin: -1px 0 0 1px;
+                background-position: -318px -70px;
+            }
+        }
+        .time {
+            color: #999;
         }
     }
 }
