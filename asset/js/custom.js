@@ -36,10 +36,24 @@ $(function(){
         $('.group-weekday').removeClass('active');
       }
   })
+
+  $('.header .group-weekday .link-weekday').click(function(e){
+    e.preventDefault();
+
+    $(this).parent().addClass('active').siblings().removeClass('active');
+  })
+
   // footer click
   $('.footer .btn-info').click(function(){
     $('.biz-info-wrap').toggleClass('active');
     $(this).toggleClass('active');
+  })
+
+  //category click 
+  $('.group-category .btn-tab').click(function(e){
+    e.preventDefault();
+
+    $(this).parent().addClass('active').siblings().removeClass('active');
   })
   // swiper slide 
   const swiper1 = new Swiper(".slide1 .swiper", {
