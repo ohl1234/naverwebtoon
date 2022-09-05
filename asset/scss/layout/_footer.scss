@@ -55,6 +55,7 @@
         }
     }
     .group-info {
+        position: relative;
         margin-top: 16px;
         .relative-link {
             display: flex;
@@ -210,6 +211,36 @@
                 
             }
         }
-        
+        .btn-top {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 36px;
+            height: 32px;
+            @include comic-img;
+            background-position: -76px -207px;
+        }
+    }
+}
+
+@include tablet {
+    .footer {
+        .group-info {
+            .info-desc {
+                br {
+                    display: none;
+                }
+            }
+            .group-webtoon-corp {
+                .corp-list {
+                    max-width: none;
+                }
+            }
+            .group-naver-corp {
+                .corp-list {
+                    max-width: none;
+                }
+            }
+        }
     }
 }

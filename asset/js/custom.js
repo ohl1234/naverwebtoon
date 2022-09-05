@@ -1,4 +1,21 @@
 $(function(){
+  // u skip event
+  $('#u_skip a').keydown(function(e){
+    key = e.keyCode;
+    if(key === 13){
+      const target = $(this).data('target');
+      const href = $(this).attr('href');
+      
+      $('[data-li='+target+']').addClass('active').siblings().removeClass('active');
+      $(href).addClass('active').siblings().removeClass('active');
+
+      if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
+        $('.group-weekday').addClass('active');
+      }else{
+        $('.group-weekday').removeClass('active');
+      }
+    }
+  })
   // header scroll event 
   let lastScroll = 0;
   $(window).scroll(function(){

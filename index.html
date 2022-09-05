@@ -10,6 +10,12 @@
     <link rel="shortcut icon" href="./asset/images/favicon/webtoon-favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <div id="u_skip">
+        <a href="#home" data-target="home"><span>홈 본문 내용 바로가기</span></a>
+        <a href="#weekday" data-target="weekday"><span>요일별 본문 내용 바로가기</span></a>
+        <a href="#end" data-target="end"><span>완결작 본문 내용 바로가기</span></a>
+        <a href="#bestchallenge" data-target="bestchallenge"><span>베스트도전 본문 내용 바로가기</span></a>
+    </div>
     <header class="header">
         <div class="group-flex1">
             <h1 class="logo-gnb">
@@ -26,16 +32,16 @@
         <div class="group-lnb">
             <nav class="lnb-area">
                 <ul class="lnb-list">
-                    <li class="lnb-item active">
+                    <li class="lnb-item active" data-li="home">
                         <a href="#home" class="tab-lnb"><span class="txt">홈</span></a>
                     </li>
-                    <li class="lnb-item">
+                    <li class="lnb-item" data-li="weekday">
                         <a href="#weekday" class="tab-lnb"><span class="txt">요일별</span></a>
                     </li>
-                    <li class="lnb-item">
+                    <li class="lnb-item" data-li="end">
                         <a href="#end" class="tab-lnb"><span class="txt">완결작</span></a>
                     </li>
-                    <li class="lnb-item">
+                    <li class="lnb-item" data-li="bestchallenge">
                         <a href="#bestchallenge" class="tab-lnb"><span class="txt">베스트도전</span></a>
                     </li>
                 </ul>
@@ -2263,6 +2269,7 @@
                     <span class="blind">© NAVER CORP</span>
                 </a>
             </div>
+            <a href="#" class="btn-top"><span class="blind">맨 위로</span></a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

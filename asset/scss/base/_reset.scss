@@ -13,6 +13,9 @@ ul,ol{
 /*
     @세팅구역
 */
+html{
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     font-size: 14px;
@@ -21,7 +24,6 @@ body {
     word-wrap: break-word;
     word-break: break-all;
     background-color: #fff;
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

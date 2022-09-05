@@ -55,6 +55,10 @@ ul, ol {
 /*
     @세팅구역
 */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   font-size: 14px;
@@ -63,7 +67,6 @@ body {
   word-wrap: break-word;
   word-break: break-all;
   background-color: #fff;
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -195,6 +198,38 @@ input, select, button, fieldset {
   clip: rect(0, 0, 0, 0);
   margin: -1px;
   overflow: hidden;
+}
+
+#u_skip {
+  position: relative;
+  z-index: 3000;
+}
+
+#u_skip a {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 138px;
+  border: 1px solid #4ec53d;
+  background: #333;
+  text-align: center;
+}
+
+#u_skip a:active,
+#u_skip a:focus {
+  top: 0;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+#u_skip span {
+  display: inline-block;
+  padding: 2px 6px 0 0;
+  font-size: 13px;
+  line-height: 26px;
+  color: #fff;
+  letter-spacing: -1px;
+  white-space: nowrap;
 }
 
 .header {
@@ -408,6 +443,7 @@ input, select, button, fieldset {
   background-color: #ccc;
 }
 .footer .group-info {
+  position: relative;
   margin-top: 16px;
 }
 .footer .group-info .relative-link {
@@ -565,7 +601,31 @@ input, select, button, fieldset {
   height: 9px;
   background-position: -134px -196px;
 }
+.footer .group-info .btn-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 32px;
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -76px -207px;
+}
 
+@media (min-width: 768px) {
+  .footer .group-info .info-desc br {
+    display: none;
+  }
+  .footer .group-info .group-webtoon-corp .corp-list {
+    max-width: none;
+  }
+  .footer .group-info .group-naver-corp .corp-list {
+    max-width: none;
+  }
+}
 .title-area {
   padding: 0 16px;
 }

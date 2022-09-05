@@ -30,3 +30,14 @@
     vertical-align: top;
     display: inline-block;
 }
+
+
+// responsive
+
+$tablet: 768px;
+
+@mixin tablet {
+    @media (min-width:$tablet){
+        @content;
+    }
+}
