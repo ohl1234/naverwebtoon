@@ -1548,8 +1548,7 @@ input, select, button, fieldset {
   padding-top: 20px;
 }
 #home .sc-age .tab-area {
-  padding-left: 2px;
-  margin: 5px 0;
+  padding: 5px 0 5px 2px;
   white-space: nowrap;
   overflow-x: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -1572,6 +1571,7 @@ input, select, button, fieldset {
   height: auto;
   background: none;
   opacity: 1;
+  border-radius: 0;
 }
 #home .sc-age .btn-tab.swiper-pagination-bullet-active {
   color: #000;
