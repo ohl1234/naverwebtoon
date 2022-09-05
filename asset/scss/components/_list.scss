@@ -334,6 +334,10 @@
                 clear: both;
             }
         }
+        .link-webtoon {
+            display: block;
+            height: 111px;
+        }
         .thumbnail {
             position: relative;
             width: 111px;
@@ -396,6 +400,9 @@
         .webtoon-item {
             width: calc((100% - 10px) / 3);
             margin-bottom: 15px;
+        }
+        .link-webtoon {
+            display: block;
         }
         .thumbnail {
             position: relative;
@@ -490,6 +497,10 @@
                 clear: both;
             }
         }
+        .link-webtoon {
+            display: block;
+            height: 111px;
+        }
         .thumbnail {
             position: relative;
             width: 111px;
@@ -552,6 +563,9 @@
         .webtoon-item {
             width: calc((100% - 10px) / 3);
             margin-bottom: 15px;
+        }
+        .link-webtoon {
+            display: block;
         }
         .thumbnail {
             position: relative;
@@ -645,6 +659,9 @@
         .best-item {
             width: calc((100% - 10px) / 3);
         }
+        .link-best {
+            display: block;
+        }
         .thumbnail {
             position: relative;
             overflow: hidden;
@@ -692,6 +709,7 @@
             border-bottom: 1px solid #f2f2f2;
         }
         .link-webtoon {
+            display: block;
             &::after {
                 content: '';
                 display: block;
