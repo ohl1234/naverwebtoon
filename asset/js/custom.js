@@ -72,6 +72,49 @@ $(function(){
 
     $(this).parent().addClass('active').siblings().removeClass('active');
   })
+
+  // home json 비동기
+  fetch("./asset/data/home.json") //
+  .then((response) => response.json())
+  .then((json) => {
+
+      const topTen = json.topTen;
+
+      const upEl= `<i class="ic-up"><span class="blind">up</span></i>`;
+      const cuttoonEl = `<i class="ic-cuttoon"><span class="blind">컷툰</span></i>`;
+
+      
+      let html = '';
+      topTen.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
+
+          html+=`<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <em class="ranking-num">${el.num}</em>
+                            <div class="webtoon-info">
+                                <strong class="webtoon-tit">
+                                    ${el.title}
+                                    <em class="badge">
+                                      ${isUp}
+                                      ${isCuttoon}
+                                    </em>
+                                </strong>
+                                <p class="desc">${el.desc}</p>
+                            </div>
+                        </div>
+                    </a>
+                  </li>`
+      });
+
+      const list1 = document.querySelector('#home .slide1 .webtoon-list');
+
+      list1.innerHTML = html;
+  });
   // swiper slide 
   const swiper1 = new Swiper(".slide1 .swiper", {
       slidesPerView: "auto",
