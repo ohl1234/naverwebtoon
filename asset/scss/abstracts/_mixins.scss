@@ -1,4 +1,4 @@
-@mixin ellip($line-height,$lines) {
+@mixin ellip($line-height:15px,$lines:1) {
     text-overflow: ellipsis;
     overflow: hidden;
 

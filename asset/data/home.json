@@ -49,7 +49,9 @@
             "up" : true,
             "cuttoon" : false,
             "desc" : "13화. 울지 않아요"
-        },
+        }
+    ],
+    "topTen2":[
         {
             "url" : "#",
             "num" : "6",
@@ -99,7 +101,9 @@
             "up" : true,
             "cuttoon" : false,
             "desc" : "66화 이성준(5)"
-        },
+        }
+    ],
+    "bestTen":[
         {
             "url" : "#",
             "num" : "1",
@@ -149,7 +153,9 @@
             "up" : true,
             "cuttoon" : false,
             "desc" : "33주"
-        },
+        }
+    ],
+    "bestTen2":[
         {
             "url" : "#",
             "num" : "6",
@@ -199,6 +205,439 @@
             "up" : true,
             "cuttoon" : false,
             "desc" : "33화 제모"
+        }
+    ],
+    "bannerSlide":[
+        {
+            "color":"#ce9eab",
+            "url" : "#",
+            "imgSrc1" : "./asset/images/bn-new-thumb1.png",
+            "imgSrc2" : "./asset/images/bn-new-thumb2.png",
+            "imgSrc3" : "./asset/images/bn-new-bg1.png",
+            "alt" : "메소드연기법",
+            "title" :"메소드연기법",
+            "writer":"김이연",
+            "desc" : "천재 배우 서시아의 섬뜩한 연기 방법"
+        },
+        {
+            "color":"#d6d3fe",
+            "url" : "#",
+            "imgSrc1" : "./asset/images/bn-new-thumb3.png",
+            "imgSrc2" : "./asset/images/bn-new-thumb4.png",
+            "imgSrc3" : "./asset/images/bn-new-bg2.png",
+            "alt" : "순수한 동거생활",
+            "title" :"순수한 동거생활",
+            "writer":"성은/플아다",
+            "desc" : "오빠의 절친과 동거중!"
+        },
+        {
+            "color":"#cbf1f8",
+            "url" : "#",
+            "imgSrc1" : "./asset/images/bn-new-thumb5.png",
+            "imgSrc2" : "./asset/images/bn-new-thumb6.png",
+            "imgSrc3" : "./asset/images/bn-new-bg3.png",
+            "alt" : "서울시 천사주의",
+            "title" :"서울시 천사주의",
+            "writer":"안민",
+            "desc" : "흑화한 먼치킨,천사반에 등장!"
+        },
+        {
+            "color":"#e09394",
+            "url" : "#",
+            "imgSrc1" : "./asset/images/bn-new-thumb8.png",
+            "imgSrc2" : "./asset/images/bn-new-thumb7.png",
+            "imgSrc3" : "./asset/images/bn-new-bg4.png",
+            "alt" : "하이웨이 투 헬",
+            "title" :"하이웨이 투 헬",
+            "writer":"가개비",
+            "desc" : "조선 최초의 엑소시스트"
+        },
+        {
+            "color":"#ffd28e",
+            "url" : "#",
+            "imgSrc1" : "./asset/images/bn-new-thumb9.png",
+            "imgSrc2" : "./asset/images/bn-new-thumb10.png",
+            "imgSrc3" : "./asset/images/bn-new-bg5.png",
+            "alt" : "쿠쿠쿠쿠",
+            "title" :"쿠쿠쿠쿠",
+            "writer":"신의철",
+            "desc" : "아프리카 펭귄과 너드남 공선생"
+        }
+    ],
+    "femaleAge10":[
+        {
+            "url" : "#",
+            "num" : "1",
+            "imgSrc" : "./asset/images/age-thumb1.jpg",
+            "alt" : "엔딩 후 서브남을 주웠다",
+            "title" :"엔딩 후 서브남을 주웠다",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "정서/황도톨"
+        },
+        {
+            "url" : "#",
+            "num" : "2",
+            "imgSrc" : "./asset/images/age-thumb2.jpg",
+            "alt" : "먹는인생",
+            "title" :"먹는인생",
+            "up" : false,
+            "cuttoon" : true,
+            "writer" : "홍끼"
+        },
+        {
+            "url" : "#",
+            "num" : "3",
+            "imgSrc" : "./asset/images/age-thumb3.jpg",
+            "alt" : "쓰레기통은 쓰레기통에",
+            "title" :"쓰레기통은 쓰레기통에",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "EDDiERiNG"
+        },
+        {
+            "url" : "#",
+            "num" : "4",
+            "imgSrc" : "./asset/images/age-thumb4.jpg",
+            "alt" : "연놈",
+            "title" :"연놈",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "상하"
+        },
+        {
+            "url" : "#",
+            "num" : "5",
+            "imgSrc" : "./asset/images/age-thumb5.jpg",
+            "alt" : "내가 죽기로 결심한 것은",
+            "title" :"내가 죽기로 결심한 것은",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "YUJU"
+        }
+    ],
+    "maleAge10":[
+        {
+            "url" : "#",
+            "num" : "1",
+            "imgSrc" : "./asset/images/age-thumb6.jpg",
+            "alt" : "전지적 독자 시점",
+            "title" :"전지적 독자 시점",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "UMI/슬리피-C/싱숑"
+        },
+        {
+            "url" : "#",
+            "num" : "2",
+            "imgSrc" : "./asset/images/age-thumb7.jpg",
+            "alt" : "나쁜사람",
+            "title" :"나쁜사람",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "둠스"
+        },
+        {
+            "url" : "#",
+            "num" : "3",
+            "imgSrc" : "./asset/images/age-thumb8.jpg",
+            "alt" : "격기3반",
+            "title" :"격기3반",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "이학"
+        },
+        {
+            "url" : "#",
+            "num" : "4",
+            "imgSrc" : "./asset/images/age-thumb9.jpg",
+            "alt" : "튜토리얼 탑의 고인물",
+            "title" :"튜토리얼 탑의 고인물",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "토프/방구석씨"
+        },
+        {
+            "url" : "#",
+            "num" : "5",
+            "imgSrc" : "./asset/images/age-thumb10.jpg",
+            "alt" : "일렉시드",
+            "title" :"일렉시드",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "손제호/제나"
+        }
+    ],
+    "femaleAge20":[
+        {
+            "url" : "#",
+            "num" : "1",
+            "imgSrc" : "./asset/images/age-thumb11.jpg",
+            "alt" : "내 남편과 결혼해줘",
+            "title" :"내 남편과 결혼해줘",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "LICO/성소작"
+        },
+        {
+            "url" : "#",
+            "num" : "2",
+            "imgSrc" : "./asset/images/age-thumb12.jpg",
+            "alt" : "조조코믹스",
+            "title" :"조조코믹스",
+            "up" : false,
+            "cuttoon" : true,
+            "writer" : "이동건"
+        },
+        {
+            "url" : "#",
+            "num" : "3",
+            "imgSrc" : "./asset/images/age-thumb1.jpg",
+            "alt" : "엔딩 후 서브남을 주웠다",
+            "title" :"엔딩 후 서브남을 주웠다",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "정서/황도톨"
+        },
+        {
+            "url" : "#",
+            "num" : "4",
+            "imgSrc" : "./asset/images/age-thumb13.jpg",
+            "alt" : "비즈니스 여친",
+            "title" :"비즈니스 여친",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "루즌아/서혜"
+        },
+        {
+            "url" : "#",
+            "num" : "5",
+            "imgSrc" : "./asset/images/age-thumb2.jpg",
+            "alt" : "먹는인생",
+            "title" :"먹는인생",
+            "up" : false,
+            "cuttoon" : true,
+            "writer" : "홍끼"
+        }
+    ],
+    "femaleAge30":[
+        {
+            "url" : "#",
+            "num" : "1",
+            "imgSrc" : "./asset/images/age-thumb12.jpg",
+            "alt" : "조조코믹스",
+            "title" :"조조코믹스",
+            "up" : false,
+            "cuttoon" : true,
+            "writer" : "이동건"
+        },
+        {
+            "url" : "#",
+            "num" : "2",
+            "imgSrc" : "./asset/images/age-thumb13.jpg",
+            "alt" : "비즈니스 여친",
+            "title" :"비즈니스 여친",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "루즌아/서혜"
+        },
+        {
+            "url" : "#",
+            "num" : "3",
+            "imgSrc" : "./asset/images/age-thumb14.jpg",
+            "alt" : "여신강림",
+            "title" :"여신강림",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "야옹이"
+        },
+        {
+            "url" : "#",
+            "num" : "4",
+            "imgSrc" : "./asset/images/age-thumb15.jpg",
+            "alt" : "마른 가지에 나무처럼",
+            "title" :"마른 가지에 나무처럼",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "화음/달새울"
+        },
+        {
+            "url" : "#",
+            "num" : "5",
+            "imgSrc" : "./asset/images/age-thumb16.jpg",
+            "alt" : "1을 줄게",
+            "title" :"1을 줄게",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "김계란"
+        }
+    ],
+    "maleAge30":[
+        {
+            "url" : "#",
+            "num" : "1",
+            "imgSrc" : "./asset/images/age-thumb17.jpg",
+            "alt" : "헬퍼 2 : 킬베로스",
+            "title" :"헬퍼 2 : 킬베로스",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "삭"
+        },
+        {
+            "url" : "#",
+            "num" : "2",
+            "imgSrc" : "./asset/images/age-thumb18.jpg",
+            "alt" : "김부장",
+            "title" :"김부장",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "박태준 만화회사/정종택"
+        },
+        {
+            "url" : "#",
+            "num" : "3",
+            "imgSrc" : "./asset/images/age-thumb19.jpg",
+            "alt" : "칼에 취한 밤을 걷다",
+            "title" :"칼에 취한 밤을 걷다",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "JP/송민/유진성"
+        },
+        {
+            "url" : "#",
+            "num" : "4",
+            "imgSrc" : "./asset/images/age-thumb20.jpg",
+            "alt" : "사상최강",
+            "title" :"사상최강",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "이단아/황규영"
+        },
+        {
+            "url" : "#",
+            "num" : "5",
+            "imgSrc" : "./asset/images/age-thumb21.jpg",
+            "alt" : "고삼무쌍",
+            "title" :"고삼무쌍",
+            "up" : false,
+            "cuttoon" : false,
+            "writer" : "B급달궁/하마"
+        }
+    ],
+    "collection1":[
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb1.jpg",
+            "alt" : "언니, 이번 생엔 내가 왕비야",
+            "title" :"언니, 이번 생엔 내가 왕비야",
+            "writer" : "Omin/테미스/레팔진프"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb2.jpg",
+            "alt" : "더나우",
+            "title" :"더나우",
+            "writer" : "이니"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb3.jpg",
+            "alt" : "1초",
+            "title" :"1초",
+            "writer" : "시니/광운"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb4.jpg",
+            "alt" : "내가 키운 S급들",
+            "title" :"내가 키운 S급들",
+            "writer" : "seri/비완/근서"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb5.jpg",
+            "alt" : "투신전생기",
+            "title" :"투신전생기",
+            "writer" : "청담"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb6.jpg",
+            "alt" : "광해의 연인",
+            "title" :"광해의 연인",
+            "writer" : "러시/유오디아"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb7.jpg",
+            "alt" : "화산귀환",
+            "title" :"화산귀환",
+            "writer" : "LICO/비가"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb8.jpg",
+            "alt" : "내 남편과 결혼해줘",
+            "title" :"내 남편과 결혼해줘",
+            "writer" : "LICO/성소작"
+        }
+    ],
+    "collection2":[
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb9.jpg",
+            "alt" : "호랑신랑뎐",
+            "title" :"호랑신랑뎐",
+            "writer" : "고추참치"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb10.jpg",
+            "alt" : "호랑이 들어와요",
+            "title" :"호랑이 들어와요",
+            "writer" : "배세혁/유은"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb11.jpg",
+            "alt" : "대신 심부름을 해다오",
+            "title" :"대신 심부름을 해다오",
+            "writer" : "고아라"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb12.jpg",
+            "alt" : "미니어처 생활백서",
+            "title" :"미니어처 생활백서",
+            "writer" : "엘렌 심"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb13.jpg",
+            "alt" : "안녕, 나의 수집",
+            "title" :"안녕, 나의 수집",
+            "writer" : "하린"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb14.jpg",
+            "alt" : "개를 낳았다",
+            "title" :"개를 낳았다",
+            "writer" : "이선"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb15.jpg",
+            "alt" : "위아더좀비",
+            "title" :"위아더좀비",
+            "writer" : "이명재"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/collection-thumb16.jpg",
+            "alt" : "개와 사람의 시간",
+            "title" :"개와 사람의 시간",
+            "writer" : "무브"
         }
     ]
 }

@@ -54,6 +54,9 @@
                 line-height: 16px;
                 font-weight: 500;
                 color: #999;
+                &.active {
+                    color: #000;
+                }
             }
         }
         .btn-webtoon {
@@ -67,9 +70,6 @@
                 width: 1px;
                 height: 11px;
                 background-color: #eee;
-            }
-            &.active {
-                color: #000;
             }
         }
     }

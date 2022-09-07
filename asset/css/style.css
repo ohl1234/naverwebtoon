@@ -634,6 +634,9 @@ input, select, button, fieldset {
   font-weight: 700;
 }
 
+#home .sc-rising .swiper-slide {
+  width: calc(100% - 30px);
+}
 #home .sc-rising .webtoon-list {
   padding-left: 16px;
 }
@@ -689,7 +692,11 @@ input, select, button, fieldset {
   font-weight: 600;
   color: #222;
 }
+#home .sc-rising .webtoon-info {
+  padding-top: 9px;
+}
 #home .sc-rising .webtoon-tit {
+  margin-top: 9px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -772,6 +779,25 @@ input, select, button, fieldset {
   width: 163px;
   height: 130px;
 }
+#home .sc-new .thumb-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#home .sc-new .new-img1 {
+  z-index: 3;
+}
+#home .sc-new .new-img2 {
+  z-index: 2;
+}
+#home .sc-new .thumb-bg {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  z-index: 1;
+  width: 163px;
+  height: 130px;
+}
 #home .sc-new .webtoon-tit {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -806,6 +832,9 @@ input, select, button, fieldset {
   font-size: 12px;
   color: #4c4c4c;
   letter-spacing: -0.2px;
+}
+#home .sc-age .swiper-slide {
+  width: calc(100% - 30px);
 }
 #home .sc-age .webtoon-list {
   width: 411px;
@@ -853,6 +882,9 @@ input, select, button, fieldset {
   display: flex;
   overflow: hidden;
   height: 100%;
+}
+#home .sc-age .webtoon-info {
+  padding-top: 9px;
 }
 #home .sc-age .ranking-num {
   display: block;
@@ -965,8 +997,34 @@ input, select, button, fieldset {
   font-size: 12px;
   color: #999;
 }
+#home .group-shortcut .link-shortcut {
+  position: relative;
+  display: block;
+  height: 46px;
+  padding: 0 16px 0 48px;
+  font-size: 13px;
+  letter-spacing: -0.43px;
+  line-height: 46px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+#home .group-shortcut .link-shortcut::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -268px -142px;
+}
 
 #weekday .sc-new .swiper-slide {
+  width: calc(100% - 30px);
   padding-left: 16px;
 }
 #weekday .sc-new .swiper-slide::after {
@@ -1121,7 +1179,7 @@ input, select, button, fieldset {
   font-size: 12px;
   color: #999;
 }
-#weekday .sc-webtoon .link-shortcut {
+#weekday .group-shortcut .link-shortcut {
   position: relative;
   display: block;
   height: 46px;
@@ -1130,8 +1188,9 @@ input, select, button, fieldset {
   letter-spacing: -0.43px;
   line-height: 46px;
   border-top: 1px solid #eee;
+  background-color: #fff;
 }
-#weekday .sc-webtoon .link-shortcut::before {
+#weekday .group-shortcut .link-shortcut::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -1147,6 +1206,7 @@ input, select, button, fieldset {
 }
 
 #end .sc-end .swiper-slide {
+  width: calc(100% - 30px);
   padding-left: 16px;
 }
 #end .sc-end .swiper-slide::after {
@@ -1325,6 +1385,31 @@ input, select, button, fieldset {
   display: inline-block;
   background-position: -268px -142px;
 }
+#end .group-shortcut .link-shortcut {
+  position: relative;
+  display: block;
+  height: 46px;
+  padding: 0 16px 0 48px;
+  font-size: 13px;
+  letter-spacing: -0.43px;
+  line-height: 46px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+#end .group-shortcut .link-shortcut::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -268px -142px;
+}
 
 #bestchallenge .sc-best .best-list {
   display: flex;
@@ -1384,6 +1469,9 @@ input, select, button, fieldset {
 #bestchallenge .sc-webtoon .webtoon-item {
   padding: 8px 16px;
   border-bottom: 1px solid #f2f2f2;
+}
+#bestchallenge .sc-webtoon .webtoon-item:last-of-type {
+  border-bottom: none;
 }
 #bestchallenge .sc-webtoon .link-webtoon {
   display: block;
@@ -1497,6 +1585,31 @@ input, select, button, fieldset {
 #bestchallenge .sc-webtoon .time {
   color: #999;
 }
+#bestchallenge .group-shortcut .link-shortcut {
+  position: relative;
+  display: block;
+  height: 46px;
+  padding: 0 16px 0 48px;
+  font-size: 13px;
+  letter-spacing: -0.43px;
+  line-height: 46px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+#bestchallenge .group-shortcut .link-shortcut::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/sp-comic-bg.png);
+  background-repeat: no-repeat;
+  background-size: 330px 312px;
+  vertical-align: top;
+  display: inline-block;
+  background-position: -268px -142px;
+}
 
 .container {
   width: 100%;
@@ -1549,6 +1662,9 @@ input, select, button, fieldset {
   font-weight: 500;
   color: #999;
 }
+#home .sc-rising .tab-area a.active {
+  color: #000;
+}
 #home .sc-rising .btn-webtoon::after {
   content: "";
   position: absolute;
@@ -1559,9 +1675,6 @@ input, select, button, fieldset {
   width: 1px;
   height: 11px;
   background-color: #eee;
-}
-#home .sc-rising .btn-webtoon.active {
-  color: #000;
 }
 #home .group-wrap {
   background-color: #fff;

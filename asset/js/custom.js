@@ -79,12 +79,34 @@ $(function(){
   .then((json) => {
 
       const topTen = json.topTen;
+      const topTen2 = json.topTen2;
+      const bestTen = json.bestTen;
+      const bestTen2 = json.bestTen2;
+      const bannerSlide = json.bannerSlide;
+      const femaleAge10 = json.femaleAge10;
+      const maleAge10 = json.maleAge10;
+      const femaleAge20 = json.femaleAge20;
+      const femaleAge30 = json.femaleAge30;
+      const maleAge30 = json.maleAge30;
+      const collection1 = json.collection1;
+      const collection2 = json.collection2;
 
       const upEl= `<i class="ic-up"><span class="blind">up</span></i>`;
       const cuttoonEl = `<i class="ic-cuttoon"><span class="blind">컷툰</span></i>`;
 
       
       let html = '';
+      let html2 = '';
+      let html3 = '';
+      let html4 = '';
+      let html5 = '';
+      let html6 = '';
+      let html7 = '';
+      let html8 = '';
+      let html9 = '';
+      let html10 = '';
+      let html11 = '';
+      let html12 = '';
       topTen.forEach(el => {
         const isUp = el.up ? upEl : "";
         const isCuttoon = el.cuttoon ? cuttoonEl : "";
@@ -110,37 +132,343 @@ $(function(){
                     </a>
                   </li>`
       });
+      topTen2.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
 
-      const list1 = document.querySelector('#home .slide1 .webtoon-list');
+          html2+=`<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <em class="ranking-num">${el.num}</em>
+                            <div class="webtoon-info">
+                                <strong class="webtoon-tit">
+                                    ${el.title}
+                                    <em class="badge">
+                                      ${isUp}
+                                      ${isCuttoon}
+                                    </em>
+                                </strong>
+                                <p class="desc">${el.desc}</p>
+                            </div>
+                        </div>
+                    </a>
+                  </li>`
+      });
+      bestTen.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
+
+          html3+=`<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <em class="ranking-num">${el.num}</em>
+                            <div class="webtoon-info">
+                                <strong class="webtoon-tit">
+                                    ${el.title}
+                                    <em class="badge">
+                                      ${isUp}
+                                      ${isCuttoon}
+                                    </em>
+                                </strong>
+                                <p class="desc">${el.desc}</p>
+                            </div>
+                        </div>
+                    </a>
+                  </li>`
+      });
+      bestTen2.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
+
+          html4+=`<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <em class="ranking-num">${el.num}</em>
+                            <div class="webtoon-info">
+                                <strong class="webtoon-tit">
+                                    ${el.title}
+                                    <em class="badge">
+                                      ${isUp}
+                                      ${isCuttoon}
+                                    </em>
+                                </strong>
+                                <p class="desc">${el.desc}</p>
+                            </div>
+                        </div>
+                    </a>
+                  </li>`
+      });
+      bannerSlide.forEach(el => {
+
+          html5+=`<div class="swiper-slide">
+                    <a href="${el.url}" class="link-new" style="background-color:${el.color}">
+                        <div class="content-wrap">
+                            <div class="info-box">
+                                <strong class="webtoon-tit">${el.title}</strong>
+                                <span class="writer">${el.writer}</span>
+                                <p class="desc">${el.desc}</p>
+                            </div>
+                            <div class="thumb-box">
+                                <img src="${el.imgSrc1}" alt="${el.alt}" class="new-img1">
+                                <img src="${el.imgSrc2}" alt="${el.alt}" class="new-img2">
+                                <div class="thumb-bg">
+                                    <img src="${el.imgSrc3}" alt="${el.alt}">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>`
+      });
+      femaleAge10.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
+
+        html6+= `<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <em class="ranking-num">${el.num}</em>
+                            <div class="webtoon-info">
+                                <strong class="webtoon-tit">
+                                    ${el.title}
+                                    <em class="badge">
+                                        ${isUp}
+                                        ${isCuttoon}
+                                    </em>
+                                </strong>
+                                <span class="writer">${el.writer}</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>`
+      });
+      maleAge10.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
+
+        html7+= `<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <em class="ranking-num">${el.num}</em>
+                            <div class="webtoon-info">
+                                <strong class="webtoon-tit">
+                                    ${el.title}
+                                    <em class="badge">
+                                        ${isUp}
+                                        ${isCuttoon}
+                                    </em>
+                                </strong>
+                                <span class="writer">${el.writer}</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>`
+      });
+      femaleAge20.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
+
+        html8+= `<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <em class="ranking-num">${el.num}</em>
+                            <div class="webtoon-info">
+                                <strong class="webtoon-tit">
+                                    ${el.title}
+                                    <em class="badge">
+                                        ${isUp}
+                                        ${isCuttoon}
+                                    </em>
+                                </strong>
+                                <span class="writer">${el.writer}</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>`
+      });
+      femaleAge30.forEach(el => {
+      const isUp = el.up ? upEl : "";
+      const isCuttoon = el.cuttoon ? cuttoonEl : "";
+
+      html9+= `<li class="webtoon-item">
+                  <a href="${el.url}" class="link-webtoon">
+                      <div class="thumbnail">
+                          <img src="${el.imgSrc}" alt="${el.alt}">
+                      </div>
+                      <div class="info-box">
+                          <em class="ranking-num">${el.num}</em>
+                          <div class="webtoon-info">
+                              <strong class="webtoon-tit">
+                                  ${el.title}
+                                  <em class="badge">
+                                      ${isUp}
+                                      ${isCuttoon}
+                                  </em>
+                              </strong>
+                              <span class="writer">${el.writer}</span>
+                          </div>
+                      </div>
+                  </a>
+              </li>`
+      });
+      maleAge30.forEach(el => {
+      const isUp = el.up ? upEl : "";
+      const isCuttoon = el.cuttoon ? cuttoonEl : "";
+
+      html10+= `<li class="webtoon-item">
+                  <a href="${el.url}" class="link-webtoon">
+                      <div class="thumbnail">
+                          <img src="${el.imgSrc}" alt="${el.alt}">
+                      </div>
+                      <div class="info-box">
+                          <em class="ranking-num">${el.num}</em>
+                          <div class="webtoon-info">
+                              <strong class="webtoon-tit">
+                                  ${el.title}
+                                  <em class="badge">
+                                      ${isUp}
+                                      ${isCuttoon}
+                                  </em>
+                              </strong>
+                              <span class="writer">${el.writer}</span>
+                          </div>
+                      </div>
+                  </a>
+              </li>`
+      });
+      collection1.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
+  
+        html11+= `<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <strong class="webtoon-tit">${el.title}</strong>
+                            <span class="writer">${el.writer}</span>
+                        </div>
+                    </a>
+                 </li>`
+      });
+      collection2.forEach(el => {
+        const isUp = el.up ? upEl : "";
+        const isCuttoon = el.cuttoon ? cuttoonEl : "";
+  
+        html12+= `<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <strong class="webtoon-tit">${el.title}</strong>
+                            <span class="writer">${el.writer}</span>
+                        </div>
+                    </a>
+                 </li>`
+      });
+
+      const list1 = document.querySelector('#home .slide1 #webtoon1');
+      const list2 = document.querySelector('#home .slide1 #webtoon2');
+      const list3 = document.querySelector('#home .slide1 #best1');
+      const list4 = document.querySelector('#home .slide1 #best2');
+      const bannerList = document.querySelector('#home .slide2 .swiper-wrapper');
+      const list5 = document.querySelector('#home .slide3 #femaleAge10');
+      const list6 = document.querySelector('#home .slide3 #maleAge10');
+      const list7 = document.querySelector('#home .slide3 #femaleAge20');
+      const list8 = document.querySelector('#home .slide3 #maleAge20');
+      const list9 = document.querySelector('#home .slide3 #femaleAge30');
+      const list10 = document.querySelector('#home .slide3 #maleAge30');
+      const list11 = document.querySelector('#home #collection1');
+      const list12 = document.querySelector('#home #collection2');
 
       list1.innerHTML = html;
+      list2.innerHTML = html2
+      list3.innerHTML = html3;
+      list4.innerHTML = html4;
+      bannerList.innerHTML = html5;
+      list5.innerHTML = html6;
+      list6.innerHTML = html7;
+      list7.innerHTML = html8;
+      list8.innerHTML = html7;
+      list9.innerHTML = html9;
+      list10.innerHTML = html10;
+      list11.innerHTML = html11;
+      list12.innerHTML = html12;
+
+
+      const swiper1 = new Swiper(".slide1 .swiper", {
+        slidesPerView: "auto",
+        loop:true,
+        spaceBetween: 0,
+      });
+
+      //ss의 부재..
+      // $('.slide1 .swiper-slide').each(function(i,el){
+      //     const slide = $(this).data('swiperSlideIndex');
+      //     console.log(slide);
+      //   })
+      swiper1.on('slideChange',function(){
+          if(this.activeIndex > 1){
+            $('.btn-best').addClass('active').siblings().removeClass('active');
+          }else{
+            $('.btn-webtoon').addClass('active').siblings().removeClass('active');
+          }
+      });
+      console.log(swiper1.activeIndex);
+
+      $('.tab-area a').click(function(){
+        if ($(this).attr('aria-selected')=="true") {
+          swiper1.slideTo(0);
+        } else {
+          swiper1.slideTo(2)
+        }
+      });
+      const swiper2 = new Swiper(".slide2 .swiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+        loop: true,
+        pagination: {
+            el: ".fraction1",
+            type: "fraction",
+          }
+      });
+    
+      slide3Arr = ['10대여자','10대남자','20대여자','20대남자','30대여자','30대남자']
+      const swiper3 = new Swiper(".slide3 .swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        loop:true,
+        pagination: {
+          el: ".sc-age .tab-area",
+          clickable: true,
+          renderBullet: function (index, className) {
+              return `<a href="#" class="btn-tab ${className}">${slide3Arr[index]}</a>`;
+            }
+          }
+        });
   });
   // swiper slide 
-  const swiper1 = new Swiper(".slide1 .swiper", {
-      slidesPerView: "auto",
-      spaceBetween: 0,
-    });
-  const swiper2 = new Swiper(".slide2 .swiper", {
-      slidesPerView: 'auto',
-      spaceBetween: 8,
-      loop: true,
-      pagination: {
-          el: ".fraction1",
-          type: "fraction",
-        }
-    });
-  slide3Arr = ['10대여자','10대남자','20대여자','20대남자','30대여자','30대남자']
-  const swiper3 = new Swiper(".slide3 .swiper", {
-    slidesPerView: "auto",
-    spaceBetween: 0,
-    pagination: {
-      el: ".sc-age .tab-area",
-      clickable: true,
-      renderBullet: function (index, className) {
-          return `<a href="#" class="btn-tab ${className}">${slide3Arr[index]}</a>`;
-        }
-      }
-    });
+
+
   const swiper4 = new Swiper(".slide4 .swiper", {
     slidesPerView: "auto",
     spaceBetween: 0,

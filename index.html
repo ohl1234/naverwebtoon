@@ -16,7 +16,7 @@
         <a href="#end" data-target="end"><span>완결작 본문 내용 바로가기</span></a>
         <a href="#bestchallenge" data-target="bestchallenge"><span>베스트도전 본문 내용 바로가기</span></a>
     </div>
-    <header class="header">
+    <header class="header" role="banner">
         <div class="group-flex1">
             <h1 class="logo-gnb">
                 <a href="#" class="link-logo"><span class="blind">네이버</span></a>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="group-lnb">
-            <nav class="lnb-area">
+            <nav class="lnb-area" aria-labelledby="global-navigation">
                 <ul class="lnb-list">
                     <li class="lnb-item active" data-li="home">
                         <a href="#home" class="tab-lnb"><span class="txt">홈</span></a>
@@ -48,47 +48,47 @@
             </nav>
         </div>
         <div class="group-weekday">
-            <ul class="weekday-list">
-                <li class="weekday-item active">
+            <ul class="weekday-list" role="tablist">
+                <li class="weekday-item active" role="tab" aria-selected="true">
                     <a href="#" class="link-weekday">월</a>
                 </li>
-                <li class="weekday-item">
+                <li class="weekday-item" role="tab" aria-selected="false">
                     <a href="#" class="link-weekday">화</a>
                 </li>
-                <li class="weekday-item">
+                <li class="weekday-item" role="tab" aria-selected="false">
                     <a href="#" class="link-weekday">수</a>
                 </li>
-                <li class="weekday-item">
+                <li class="weekday-item" role="tab" aria-selected="false">
                     <a href="#" class="link-weekday">목</a>
                 </li>
-                <li class="weekday-item">
+                <li class="weekday-item" role="tab" aria-selected="false">
                     <a href="#" class="link-weekday">금</a>
                 </li>
-                <li class="weekday-item">
+                <li class="weekday-item" role="tab" aria-selected="false">
                     <a href="#" class="link-weekday">토</a>
                 </li>
-                <li class="weekday-item">
+                <li class="weekday-item" role="tab" aria-selected="false">
                     <a href="#" class="link-weekday">일</a>
                 </li>
-                <li class="weekday-item">
+                <li class="weekday-item" role="tab" aria-selected="false">
                     <a href="#" class="link-weekday">매일+</a>
                 </li>
             </ul>
         </div>
     </header>
-    <main class="container">
+    <main class="container" role="main">
         <div id="home" class="home active">
-            <div class="webtoon-banner banner1">
+            <aside class="webtoon-banner banner1" aria-labelledby="advertisement">
                 <a href="#" class="link-banner">
                     <img src="./asset/images/banner-thumb1.jpg" alt="2022 네이버웹툰 최강자전">
                 </a>
-            </div>
+            </aside>
             <section class="sc-rising">
                 <div class="title-area">
                     <h2 class="sc-title">실시간랭킹 TOP10</h2>
-                    <div class="tab-area">
-                        <a href="#" class="btn-webtoon active">웹툰</a>
-                        <a href="#" class="btn-best">베스트도전</a>
+                    <div class="tab-area" role="tablist">
+                        <a href="#" class="btn-webtoon active" role="tab" aria-selected="true">웹툰</a>
+                        <a href="#" class="btn-best" role="tab" aria-selected="false">베스트도전</a>
                     </div>
                 </div>
                 <div class="slide slide1">
@@ -96,419 +96,19 @@
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <ol class="webtoon-list">
-                                        <!-- <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">1</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">2</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">3</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">4</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">5</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li> -->
+                                    <ol id="webtoon1" class="webtoon-list">
                                     </ol>
                                 </div>
                                 <div class="swiper-slide">
-                                    <ol class="webtoon-list">
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">6</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">7</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">8</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">9</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">10</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
+                                    <ol id="webtoon2" class="webtoon-list">
                                     </ol>
                                 </div>
                                 <div class="swiper-slide">
-                                    <ol class="webtoon-list">
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">1</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">2</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">3</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">4</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">5</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
+                                    <ol id="best1" class="webtoon-list">
                                     </ol>
                                 </div>
                                 <div class="swiper-slide">
-                                    <ol class="webtoon-list">
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">6</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">7</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">8</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">9</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="webtoon-item">
-                                            <a href="#" class="link-webtoon">
-                                                <div class="thumbnail">
-                                                    <img src="./asset/images/comic-thumb3.jpg" alt="99강화나무몽둥이">
-                                                </div>
-                                                <div class="info-box">
-                                                    <em class="ranking-num">10</em>
-                                                    <div class="webtoon-info">
-                                                        <strong class="webtoon-tit">
-                                                            99강화나무몽둥이
-                                                            <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                        </strong>
-                                                        <p class="desc">24화. 엉댕이맨 (4)</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
+                                    <ol id="best2" class="webtoon-list">
                                     </ol>
                                 </div>
                             </div>
@@ -526,76 +126,6 @@
                         <div class="content">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#" class="link-new">
-                                            <div class="content-wrap">
-                                                <div class="info-box">
-                                                    <strong class="webtoon-tit">너에게 입덕중</strong>
-                                                    <span class="writer">카레 / 새우</span>
-                                                    <p class="desc">숨덕소녀와 찐덕소년이 만났다</p>
-                                                </div>
-                                                <div class="thumb-box">
-                                                    <img src="./asset/images/new-comic-thumb1.png" alt="너에게 입덕중">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="link-new">
-                                            <div class="content-wrap">
-                                                <div class="info-box">
-                                                    <strong class="webtoon-tit">너에게 입덕중</strong>
-                                                    <span class="writer">카레 / 새우</span>
-                                                    <p class="desc">숨덕소녀와 찐덕소년이 만났다</p>
-                                                </div>
-                                                <div class="thumb-box">
-                                                    <img src="./asset/images/new-comic-thumb1.png" alt="너에게 입덕중">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="link-new">
-                                            <div class="content-wrap">
-                                                <div class="info-box">
-                                                    <strong class="webtoon-tit">너에게 입덕중</strong>
-                                                    <span class="writer">카레 / 새우</span>
-                                                    <p class="desc">숨덕소녀와 찐덕소년이 만났다</p>
-                                                </div>
-                                                <div class="thumb-box">
-                                                    <img src="./asset/images/new-comic-thumb1.png" alt="너에게 입덕중">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="link-new">
-                                            <div class="content-wrap">
-                                                <div class="info-box">
-                                                    <strong class="webtoon-tit">너에게 입덕중</strong>
-                                                    <span class="writer">카레 / 새우</span>
-                                                    <p class="desc">숨덕소녀와 찐덕소년이 만났다</p>
-                                                </div>
-                                                <div class="thumb-box">
-                                                    <img src="./asset/images/new-comic-thumb1.png" alt="너에게 입덕중">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="link-new">
-                                            <div class="content-wrap">
-                                                <div class="info-box">
-                                                    <strong class="webtoon-tit">너에게 입덕중</strong>
-                                                    <span class="writer">카레 / 새우</span>
-                                                    <p class="desc">숨덕소녀와 찐덕소년이 만났다</p>
-                                                </div>
-                                                <div class="thumb-box">
-                                                    <img src="./asset/images/new-comic-thumb1.png" alt="너에게 입덕중">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -605,640 +135,34 @@
                     <div class="title-area">
                         <h2 class="sc-title">연령별·성별 실시간 랭킹</h2>
                     </div>
-                    <div class="tab-area">
-                        <!-- <a href="#" class="btn-tab active">10대여자</a>
-                        <a href="#" class="btn-tab">10대남자</a>
-                        <a href="#" class="btn-tab">20대여자</a>
-                        <a href="#" class="btn-tab">20대남자</a>
-                        <a href="#" class="btn-tab">30대여자</a>
-                        <a href="#" class="btn-tab">30대남자</a> -->
+                    <div class="tab-area" role="tablist">
                     </div>
                     <div class="slide slide3">
                         <div class="content">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <ol class="webtoon-list">
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">1</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                    <i class="ic-up"><span class="blind">up</span></i>
-                                                                    <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                                </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">2</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">3</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">4</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">5</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
+                                    <div class="swiper-slide" role="tabpanel">
+                                        <ol id="femaleAge10" class="webtoon-list">
                                         </ol>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <ol class="webtoon-list">
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">1</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">2</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">3</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">4</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">5</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
+                                    <div class="swiper-slide" role="tabpanel">
+                                        <ol id="maleAge10" class="webtoon-list">
                                         </ol>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <ol class="webtoon-list">
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">1</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">2</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">3</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">4</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">5</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
+                                    <div class="swiper-slide" role="tabpanel">
+                                        <ol id="femaleAge20" class="webtoon-list">
                                         </ol>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <ol class="webtoon-list">
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">1</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">2</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">3</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">4</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">5</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
+                                    <div class="swiper-slide" role="tabpanel">
+                                        <ol id="maleAge20" class="webtoon-list">
                                         </ol>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <ol class="webtoon-list">
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">1</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">2</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">3</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">4</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">5</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
+                                    <div class="swiper-slide" role="tabpanel">
+                                        <ol id="femaleAge30" class="webtoon-list">
                                         </ol>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <ol class="webtoon-list">
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">1</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">2</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">3</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">4</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="webtoon-item">
-                                                <a href="#" class="link-webtoon">
-                                                    <div class="thumbnail">
-                                                        <img src="./asset/images/comic-thumb4.jpg" alt="조조코믹스">
-                                                    </div>
-                                                    <div class="info-box">
-                                                        <em class="ranking-num">5</em>
-                                                        <div class="webtoon-info">
-                                                            <strong class="webtoon-tit">
-                                                                조조코믹스
-                                                                <em class="badge">
-                                                                <i class="ic-up"><span class="blind">up</span></i>
-                                                                <i class="ic-cuttoon"><span class="blind">컷툰</span></i>
-                                                            </em>
-                                                            </strong>
-                                                            <span class="writer">이동건</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
+                                    <div class="swiper-slide" role="tabpanel">
+                                        <ol id="maleAge30" class="webtoon-list">
                                         </ol>
                                     </div>
                                 </div>
@@ -1247,184 +171,33 @@
                     </div>
                 </section>
             </div>
-            <div class="webtoon-banner banner2">
+            <aside class="webtoon-banner banner2" aria-labelledby="advertisement">
                 <a href="#" class="link-banner">
                     <img src="./asset/images/banner-thumb2.jpg" alt="도시소녀와 시골소년의 여름빛 로맨스 여름의 너에게 보러가기">
                 </a>
-            </div>
+            </aside>
             <section class="sc-collection">
                 <div class="title-area">
-                    <h2 class="sc-title">여름의 끝자락을 잡고...★</h2>
+                    <h2 class="sc-title">벌써 9월이라고? #시간여행 시켜줘</h2>
                 </div>
-                <ul class="webtoon-list">
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
+                <ul id="collection1" class="webtoon-list">
                 </ul>
             </section>
-            <div class="webtoon-banner banner3">
+            <aside class="webtoon-banner banner3" aria-labelledby="advertisement">
                 <a href="#" class="link-banner">
                     <img src="./asset/images/banner-thumb3.jpg" alt="오빠의 절친과 두근두근 동거 중! 순수한 동거생활 보러가기">
                 </a>
-            </div>
+            </aside>
             <section class="sc-collection">
                 <div class="title-area">
                     <h2 class="sc-title">정주행하기 딱 좋은 3-50화 연재작</h2>
                 </div>
-                <ul class="webtoon-list">
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="webtoon-item">
-                        <a href="#" class="link-webtoon">
-                            <div class="thumbnail">
-                                <img src="./asset/images/comic-thumb1.jpg" alt="세기말풋사과보습학원">
-                            </div>
-                            <div class="info-box">
-                                <strong class="webtoon-tit">세기말 풋사과 보습학원</strong>
-                                <span class="writer">순끼</span>
-                            </div>
-                        </a>
-                    </li>
+                <ul id="collection2" class="webtoon-list">
                 </ul>
             </section>
+            <div class="group-shortcut">
+                <a href="#" class="link-shortcut" role="button">네이버웹툰 바로가기 홈화면 추가</a>
+            </div>
         </div>
         <div id="weekday" class="weekday">
             <section class="sc-new">
@@ -1516,7 +289,7 @@
                             <option value="#">업데이트순</option>
                         </select>
                     </div>
-                    <a href="#" class="link-like">관심웹툰 먼저보기</a>
+                    <a href="#" class="link-like" role="button">관심웹툰 먼저보기</a>
                 </div>
                 <ul class="webtoon-list">
                     <li class="webtoon-item">
@@ -1650,8 +423,8 @@
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="link-shortcut">네이버웹툰 바로가기 홈화면 추가</a>
             </section>
+            <a href="#" class="link-shortcut">네이버웹툰 바로가기 홈화면 추가</a>
         </div>
         <div id="end" class="end">
             <section class="sc-end">
@@ -1758,68 +531,68 @@
                     </div>
                 </div>
             </section>
-            <div class="group-category">
-                <ul class="category-list">
-                    <li class="category-item active">
-                        <a href="#" class="btn-tab">전체</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">로맨스</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">액션</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">스포츠</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">스릴러</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">판타지</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">드라마</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">일상</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">개그</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">감성</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">무협/사극</a>
-                    </li>
-                    <li class="category-item division">
-                        <a href="#" class="btn-tab">에피소드</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">옴니버스</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">스토리</a>
-                    </li>
-                </ul>
-            </div>
             <section class="sc-webtoon">
                 <h2 class="blind">웹툰 완결 리스트</h2>
+                <div class="group-category">
+                    <ul class="category-list">
+                        <li class="category-item active">
+                            <a href="#" class="btn-tab">전체</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">로맨스</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">액션</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">스포츠</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">스릴러</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">판타지</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">드라마</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">일상</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">개그</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">감성</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">무협/사극</a>
+                        </li>
+                        <li class="category-item division">
+                            <a href="#" class="btn-tab">에피소드</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">옴니버스</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">스토리</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="header-area">
                     <div class="select-tit">
                         인기순
                     </div>
                     <div class="select-box">
                         <select name="list-category" id="list-category">
-                            <option value="#">인기순</option>
+                            <option value="#" selected>인기순</option>
                             <option value="#">여성 인기순</option>
                             <option value="#">남성 인기순</option>
                             <option value="#">조회순</option>
                             <option value="#" selected>최근완결순</option>
                         </select>
                     </div>
-                    <a href="#" class="link-like">관심웹툰 먼저보기</a>
+                    <a href="#" class="link-like" role="button">관심웹툰 먼저보기</a>
                 </div>
                 <ul class="webtoon-list">
                     <li class="webtoon-item">
@@ -1896,15 +669,17 @@
                     </li>
                 </ul>
                 <div class="pagination">
-                    <a href="#" class="btn-arrow prev"><span class="blind">이전</span></a>
+                    <a href="#" class="btn-arrow prev" role="button"><span class="blind">이전</span></a>
                     <div class="page">
-                        <em class="current">1</em>
-                        <span class="total">5</span>
+                        <em class="current" aria-label="현재페이지">1</em>
+                        <span class="total" aria-label="전체페이지">5</span>
                     </div>
-                    <a href="#" class="btn-arrow next"><span class="blind">다음</span></a>
+                    <a href="#" class="btn-arrow next" role="button"><span class="blind">다음</span></a>
                 </div>
-                <a href="#" class="link-shortcut">네이버웹툰 바로가기 홈화면 추가</a>
             </section>
+            <div class="group-shortcut">
+                <a href="#" class="link-shortcut" role="button">네이버웹툰 바로가기 홈화면 추가</a>
+            </div>
         </div>
         <div id="bestchallenge" class="bestchallenge">
             <section class="sc-best">
@@ -1948,58 +723,59 @@
                     </li>
                 </ul>
             </section>
-            <div class="group-category">
-                <ul class="category-list">
-                    <li class="category-item active">
-                        <a href="#" class="btn-tab">전체</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">로맨스</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">액션</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">스포츠</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">스릴러</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">판타지</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">드라마</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">일상</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">개그</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">감성</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">무협/사극</a>
-                    </li>
-                    <li class="category-item division">
-                        <a href="#" class="btn-tab">에피소드</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">옴니버스</a>
-                    </li>
-                    <li class="category-item">
-                        <a href="#" class="btn-tab">스토리</a>
-                    </li>
-                </ul>
-            </div>
             <section class="sc-webtoon">
+                <h2 class="blind">베스트 도전 만화 리스트</h2>
+                <div class="group-category">
+                    <ul class="category-list">
+                        <li class="category-item active">
+                            <a href="#" class="btn-tab">전체</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">로맨스</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">액션</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">스포츠</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">스릴러</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">판타지</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">드라마</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">일상</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">개그</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">감성</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">무협/사극</a>
+                        </li>
+                        <li class="category-item division">
+                            <a href="#" class="btn-tab">에피소드</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">옴니버스</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="btn-tab">스토리</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="header-area">
-                    <div class="list-category">
-                        <a href="#" class="btn-tab active">조회순</a>
-                        <a href="#" class="btn-tab">업데이트순</a>
-                        <a href="#" class="btn-tab">별점순</a>
+                    <div class="list-category" role="tablist">
+                        <a href="#" class="btn-tab active" role="tab" aria-selected="true">조회순</a>
+                        <a href="#" class="btn-tab" role="tab" aria-selected="false">업데이트순</a>
+                        <a href="#" class="btn-tab" role="tab" aria-selected="false">별점순</a>
                     </div>
                     <a href="#" class="link-like">관심웹툰 먼저보기</a>
                 </div>
@@ -2025,7 +801,7 @@
                                         </i>
                                         9.79
                                     </span>
-                                    <span class="time">20:31</span>
+                                    <span class="time"><span class="blind">업데이트 날짜</span>20:31</span>
                                 </div>
                             </div>
                         </a>
@@ -2051,7 +827,7 @@
                                         </i>
                                         9.79
                                     </span>
-                                    <span class="time">20:31</span>
+                                    <span class="time"><span class="blind">업데이트 날짜</span>20:31</span>
                                 </div>
                             </div>
                         </a>
@@ -2077,7 +853,7 @@
                                         </i>
                                         9.79
                                     </span>
-                                    <span class="time">20:31</span>
+                                    <span class="time"><span class="blind">업데이트 날짜</span>20:31</span>
                                 </div>
                             </div>
                         </a>
@@ -2103,7 +879,7 @@
                                         </i>
                                         9.79
                                     </span>
-                                    <span class="time">20:31</span>
+                                    <span class="time"><span class="blind">업데이트 날짜</span>20:31</span>
                                 </div>
                             </div>
                         </a>
@@ -2129,7 +905,7 @@
                                         </i>
                                         9.79
                                     </span>
-                                    <span class="time">20:31</span>
+                                    <span class="time"><span class="blind">업데이트 날짜</span>20:31</span>
                                 </div>
                             </div>
                         </a>
@@ -2155,30 +931,33 @@
                                         </i>
                                         9.79
                                     </span>
-                                    <span class="time">20:31</span>
+                                    <span class="time"><span class="blind">업데이트 날짜</span>20:31</span>
                                 </div>
                             </div>
                         </a>
                     </li>
                 </ul>
                 <div class="pagination">
-                    <a href="#" class="btn-arrow prev"><span class="blind">이전</span></a>
+                    <a href="#" class="btn-arrow prev" role="button"><span class="blind">이전</span></a>
                     <div class="page">
-                        <em class="current">1</em>
-                        <span class="total">5</span>
+                        <em class="current" aria-label="현재페이지">1</em>
+                        <span class="total" aria-label="전체페이지">5</span>
                     </div>
-                    <a href="#" class="btn-arrow next"><span class="blind">다음</span></a>
+                    <a href="#" class="btn-arrow next" role="button"><span class="blind">다음</span></a>
                 </div>
             </section>
+            <div class="group-shortcut">
+                <a href="#" class="link-shortcut" role="button">네이버웹툰 바로가기 홈화면 추가</a>
+            </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="group-banner">
+    <footer class="footer" role="contentinfo">
+        <aside class="group-banner" aria-labelledby="advertisement">
             <a href="#" class="link-banner">
                 <img src="./asset/images/banner-thumb4.jpg" alt="데이터 걱정 없는 임시저장! 쿠키오븐에서 굽는 무료쿠키! 웹툰앱 바로가기">
             </a>
-        </div>
-        <div class="group-fnb">
+        </aside>
+        <nav class="group-fnb" aria-labelledby="foot-navigation">
             <ul class="fnb-list">
                 <li class="fnb-item">
                     <a href="#" class="link-fnb">웹툰</a>
@@ -2193,7 +972,7 @@
                     <a href="#" class="link-fnb">시리즈온</a>
                 </li>
             </ul>
-        </div>
+        </nav>
         <div class="group-info">
             <div class="group-relative-info">
                 <div class="relative-link">
@@ -2274,8 +1053,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="./asset/js/custom.js"></script>
 </body>
 </html>
