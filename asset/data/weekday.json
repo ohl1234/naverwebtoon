@@ -1,0 +1,124 @@
+{
+    "newWebtoon":[
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/new-thumb1.jpg",
+            "alt" : "자매전쟁",
+            "title" :"자매전쟁",
+            "writer":"기맹기",
+            "desc" : "단 하나로 인정받고 싶었던 두 소녀, 예술고등학교 1등과 2등을 앞다투는 '원리온'과 '추해라'. '진짜'가 되기 위한 천재 소녀들의 치명적인 전쟁이 시작된다."
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/new-thumb2.jpg",
+            "alt" : "아기 볼모가 너무 귀여워",
+            "title" :"아기 볼모가 너무 귀여워",
+            "writer":"뜨귤/유안케/다롱꽃",
+            "desc" : "불행의 시작점으로 회귀했다. 하필이면 어린아이의 몸으로 돌아와 꼼짝없이 같은 삶을 반복할 줄 알았지만... '그래! 내가 공주 대신 볼모로 잡혀가면 되잖아!' 신분을 속여 제국의 볼모로 잡혀가는데 성공! 그런데 여기 사람들 뭔가 이상하다. \"아빠라고 불러봐.\" \"여기 있는 거 다 먹어라.\" \"꼬맹이 울리는 놈 내가 다 죽여버릴 거야.\" 이거 괜찮은 거 맞나...?"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/new-thumb3.jpg",
+            "alt" : "여름의 너에게",
+            "title" :"여름의 너에게",
+            "writer":"라뮤",
+            "desc" : "15살 여름, 하루아침에 서울에서 시골로 이사를 가게 된 소라. \"여기서 어떻게 살아?!\" 뒤바뀐 일상에 울적해진 소라의 앞에 두 소년이 나타난다. 이사 온 첫날부터 늘 곁에서 도와주는 자상한 윤이, 얄궂지만 따뜻한 구석도 있는 태민. 마음에 안 드는 것만 가득한 이 동네에서, 소라를 설레게 하는 사람은 누굴까?"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/new-thumb4.jpg",
+            "alt" : "관계중독",
+            "title" :"관계중독",
+            "writer":"오얏",
+            "desc" : "잘나가는 것에 대한 환상을 품고 있던 평범한 여고생 '설단아'는 우연히 노는 아이들 무리와 친해진 후 그 무리에 적응하려 애쓰는 중이다. 그러던 중 전혀 못 알아볼 정도로 외면도, 내면도 끔찍하게 변한 단아의 '첫사랑'이 전학 오고, 과거 설단아와의 추억에 갇혀버린 첫사랑은 단아에게 소름 끼치게 집착한다. 간신히 무리에 적응 중이던 단아에겐 악몽 같은 일이다. 설상가상으로 무리의 대장 격인 불량아와도 그로 인해 트러블이 생기는데..."
+        }, 
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/new-thumb5.jpg",
+            "alt" : "지니오패스",
+            "title" :"지니오패스",
+            "writer":"공현곤",
+            "desc" : "'살인욕구를 가진 천재들을 이용해 힘을 독차지하려는 비밀조직이 존재한다!' 참전 후 살인망상에 시달리는 퇴역군인 도마도. 치료를 위해 방문한 정신상담센터에서 다짜고짜 자신을  대한민국 최상위급 천재라며 의문의 전화번호가 적힌 명함 한장을 건넨다.  그 번호를 누르니 연결된 상담원은 마도에게 원하는 뒤처리 서비스를 선택하라며 네 가지 보기를 주는데… 1번 폭행, 2번 납치, 3번 강도 그리고 4번 살인."
+        }
+    ],
+    "weekdayList":[
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb1.jpg",
+            "alt" : "참교육",
+            "title" :"참교육",
+            "writer":"채용택/한가람",
+            "break": false,
+            "like" : "관심 50만+"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb2.jpg",
+            "alt" : "퀘스트 지상주의",
+            "title" :"퀘스트 지상주의",
+            "writer":"박태준 만화회사",
+            "break": false,
+            "like" : "관심 10만+"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb3.jpg",
+            "alt" : "뷰티풀 군바리",
+            "title" :"뷰티풀 군바리",
+            "writer":"설이/윤성원",
+            "break": false,
+            "like" : "관심 50만+"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb4.jpg",
+            "alt" : "장씨세가 호위무사",
+            "title" :"장씨세가 호위무사",
+            "writer":"김인호/조형근",
+            "break": false,
+            "like" : "관심 10만+"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb5.jpg",
+            "alt" : "윈드브레이커",
+            "title" :"윈드브레이커",
+            "writer":"조용석",
+            "break": false,
+            "like" : "관심 100만+"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb6.jpg",
+            "alt" : "신의탑",
+            "title" :"신의탑",
+            "writer":"SIU",
+            "break": true,
+            "like" : "관심 200만+"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb7.jpg",
+            "alt" : "앵무살수",
+            "title" :"앵무살수",
+            "writer":"김성진",
+            "like" : "관심 10만+"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb8.jpg",
+            "alt" : "신화급 귀속 아이템을 손에 얻었다",
+            "title" :"신화급 귀속 아이템을 손에 얻었다",
+            "writer":"정선율/헤스",
+            "like" : "관심 50만+"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/weekday-thumb9.jpg",
+            "alt" : "백수세끼",
+            "title" :"백수세끼",
+            "writer":"치즈",
+            "like" : "관심 10만+"
+        }
+    ]
+}

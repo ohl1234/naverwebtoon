@@ -418,28 +418,39 @@ $(function(){
       const swiper1 = new Swiper(".slide1 .swiper", {
         slidesPerView: "auto",
         loop:true,
-        spaceBetween: 0,
+        spaceBetween: 0
       });
 
-      //ss의 부재..
-      // $('.slide1 .swiper-slide').each(function(i,el){
-      //     const slide = $(this).data('swiperSlideIndex');
-      //     console.log(slide);
-      //   })
       swiper1.on('slideChange',function(){
-          if(this.activeIndex > 1){
-            $('.btn-best').addClass('active').siblings().removeClass('active');
-          }else{
-            $('.btn-webtoon').addClass('active').siblings().removeClass('active');
-          }
+        if(this.activeIndex >= 6){
+          $('.btn-best').addClass('active').siblings().removeClass('active');
+          console.log(this.activeIndex);
+        }
+        if(this.activeIndex == 8){
+          $('.btn-webtoon').addClass('active').siblings().removeClass('active');
+        }
       });
-      console.log(swiper1.activeIndex);
+      // swiper1.on('slideChange',function(){
+      //   //const slideRank = document.querySelector('.slide1 .swiper-slide').dataset.rank;
+      //   //console.log(slideRank);
+      //   //const slideRank = document.querySelector('.slide1 .swiper-slide').dataset.rank;
+      //   const slideRank = this.realindex;
+      //   console.log(slideRank);
+      //   // if(slideIdx >= 6 ){
+      //     //   $('.btn-best').addClass('active').siblings().removeClass('active');
+      //     // }else{
+      //     //   $('.btn-webtoon').addClass('active').siblings().removeClass('active');
+      //     // }
+        
+      //   });
 
       $('.tab-area a').click(function(){
         if ($(this).attr('aria-selected')=="true") {
           swiper1.slideTo(0);
+          $('.btn-webtoon').addClass('active').siblings().removeClass('active');
         } else {
-          swiper1.slideTo(2)
+          swiper1.slideTo(2);
+          $('.btn-best').addClass('active').siblings().removeClass('active');
         }
       });
       const swiper2 = new Swiper(".slide2 .swiper", {
@@ -466,17 +477,74 @@ $(function(){
           }
         });
   });
-  // swiper slide 
 
+  fetch("./asset/data/weekday.json") //
+  .then((response) => response.json())
+  .then((json) => {
 
-  const swiper4 = new Swiper(".slide4 .swiper", {
-    slidesPerView: "auto",
-    spaceBetween: 0,
-    loop:true,
-    pagination: {
-      el: ".fraction2",
-      type: "fraction",
-    }
+      const newWebtoon = json.newWebtoon;
+      const weekdayList = json.weekdayList;
+
+      const breakEl = `<i class="ic-break"><span class="blind">휴재</span></i>`
+
+      
+      let html = '';
+      let html2 = '';
+   
+      newWebtoon.forEach(el => {
+
+          html+=`  <div class="swiper-slide">
+                      <a href="${el.url}" class="link-webtoon">
+                          <div class="thumbnail">
+                              <img src="${el.imgSrc}" alt="${el.alt}">
+                          </div>
+                          <div class="info-box">
+                              <strong class="webtoon-tit">${el.title}</strong>
+                              <span class="writer">${el.writer}</span>
+                              <p class="desc">${el.desc}</p>
+                          </div>
+                      </a>
+                    </div>`
+      });
+      weekdayList.forEach(el => {
+        const isBreak = el.break ? breakEl : "";
+
+          html2+= ` <li class="webtoon-item">
+                        <a href="${el.url}" class="link-webtoon">
+                            <div class="thumbnail">
+                                <img src="${el.imgSrc}" alt="${el.alt}">
+                            </div>
+                            <div class="info-box">
+                                <strong class="webtoon-tit">
+                                    ${el.title}
+                                    <em class="badge">
+                                      ${isBreak}
+                                    </em>
+                                </strong>
+                                <span class="writer">${el.writer}</span>
+                                <span class="like">${el.like}</span>
+                            </div>
+                        </a>
+                    </li>`
+      });
+  
+      const list1 = document.querySelector('#weekday .slide4 .swiper-wrapper');
+      const list2 = document.querySelector('#weekday .sc-webtoon .webtoon-list');
+      
+
+      list1.innerHTML = html;
+      list2.innerHTML = html2;
+    
+      const swiper4 = new Swiper(".slide4 .swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        loop:true,
+        pagination: {
+          el: ".fraction2",
+          type: "fraction",
+        }
+      });
+
   });
   const swiper5 = new Swiper(".slide5 .swiper", {
     slidesPerView: "auto",
