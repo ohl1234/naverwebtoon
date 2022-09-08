@@ -531,13 +531,62 @@ $(function(){
       });
 
   });
-  const swiper5 = new Swiper(".slide5 .swiper", {
-    slidesPerView: "auto",
-    spaceBetween: 0,
-    loop:true,
-    pagination: {
-      el: ".fraction3",
-      type: "fraction",
-    }
+
+  fetch("./asset/data/end.json") //
+  .then((response) => response.json())
+  .then((json) => {
+
+      const endWebtoon = json.endWebtoon;
+      const endList = json.endList;
+
+      let html = '';
+      let html2 = '';
+   
+      endWebtoon.forEach(el => {
+
+          html+=`  <div class="swiper-slide">
+                      <a href="${el.url}" class="link-webtoon">
+                          <div class="thumbnail">
+                              <img src="${el.imgSrc}" alt="${el.alt}">
+                          </div>
+                          <div class="info-box">
+                              <strong class="webtoon-tit">${el.title}</strong>
+                              <span class="writer">${el.writer}</span>
+                              <p class="desc">${el.desc}</p>
+                          </div>
+                      </a>
+                    </div>`
+      });
+      endList.forEach(el => {
+
+          html2+=`<li class="webtoon-item">
+                      <a href="${el.url}" class="link-webtoon">
+                          <div class="thumbnail">
+                              <img src="${el.imgSrc}" alt="${el.alt}">
+                          </div>
+                          <div class="info-box">
+                              <strong class="webtoon-tit">${el.title}</strong>
+                              <span class="writer">${el.writer}</span>
+                              <span class="like">${el.like}</span>
+                          </div>
+                      </a>
+                  </li>`
+      });
+  
+      const list1 = document.querySelector('#end .slide5 .swiper-wrapper');
+      const list2 = document.querySelector('#end .sc-webtoon .webtoon-list');
+
+      list1.innerHTML = html;
+      list2.innerHTML = html2;
+    
+      const swiper5 = new Swiper(".slide5 .swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        loop:true,
+        pagination: {
+          el: ".fraction3",
+          type: "fraction",
+        }
+      });
   });
 })
