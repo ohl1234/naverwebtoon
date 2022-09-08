@@ -65,6 +65,12 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .hidden,
@@ -620,6 +626,33 @@ input, select, button, fieldset {
   }
   .footer .group-info .group-naver-corp .corp-list {
     max-width: none;
+  }
+}
+@media (max-width: 319px) {
+  .footer .group-banner .link-banner img {
+    max-width: auto;
+    width: 100%;
+    margin: auto;
+  }
+  .footer .group-fnb .link-fnb {
+    position: relative;
+    display: block;
+    padding: 0 14px 0 13px;
+  }
+  .footer .group-info .group-webtoon-corp .corp-list {
+    max-width: 280px;
+  }
+  .footer .group-info .group-webtoon-corp .corp-item:nth-child(3n)::after {
+    content: "";
+  }
+  .footer .group-info .group-webtoon-corp .corp-item:nth-child(2)::after, .footer .group-info .group-webtoon-corp .corp-item:nth-child(5)::after, .footer .group-info .group-webtoon-corp .corp-item:nth-child(6)::after {
+    content: none;
+  }
+  .footer .group-info .group-naver-corp {
+    padding-top: 16px;
+  }
+  .footer .group-info .group-naver-corp .corp-list {
+    max-width: 260px;
   }
 }
 .title-area {
@@ -1750,6 +1783,19 @@ input, select, button, fieldset {
   background-color: #fff;
 }
 
+@media (max-width: 319px) {
+  .webtoon-banner .link-banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .webtoon-banner .link-banner img {
+    display: block;
+    max-width: auto;
+    width: 100%;
+    margin: auto;
+  }
+}
 #weekday {
   display: none;
   padding-top: 127px;

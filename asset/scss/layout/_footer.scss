@@ -244,3 +244,51 @@
         }
     }
 }
+
+@include mobile {
+    .footer {
+        .group-banner {
+            .link-banner {
+                img {
+                    max-width: auto;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+        .group-fnb {
+            .link-fnb {
+                position: relative;
+                display: block;
+                padding: 0 14px 0 13px;
+            }
+        }
+        .group-info {
+            .group-webtoon-corp {
+                .corp-list {
+                    max-width: 280px;
+                }
+                .corp-item {
+                    &:nth-child(3n) {
+                        &::after {
+                            content: "";
+                        }
+                    }
+                    &:nth-child(2),
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+            .group-naver-corp {
+                padding-top: 16px;
+                .corp-list {
+                    max-width: 260px;
+                }
+            }
+        }
+    }
+}
