@@ -73,7 +73,9 @@ $(function(){
     $(this).parent().addClass('active').siblings().removeClass('active');
   })
 
-  // home json 비동기
+  // json 비동기 + swiper slide
+
+  // #home
   fetch("./asset/data/home.json") //
   .then((response) => response.json())
   .then((json) => {
@@ -463,6 +465,7 @@ $(function(){
         });
   });
 
+  // #weekday
   fetch("./asset/data/weekday.json") //
   .then((response) => response.json())
   .then((json) => {
@@ -532,6 +535,7 @@ $(function(){
 
   });
 
+  // #end
   fetch("./asset/data/end.json") //
   .then((response) => response.json())
   .then((json) => {
@@ -588,5 +592,73 @@ $(function(){
           type: "fraction",
         }
       });
+  });
+
+  // #bestchallenge
+  fetch("./asset/data/bestchallenge.json") //
+  .then((response) => response.json())
+  .then((json) => {
+
+      const bestWebtoon = json.bestWebtoon;
+      const bestList = json.bestList;
+
+      const upEl = `<i class="ic-up"><span class="blind">up</span></i>`
+
+      let html = '';
+      let html2 = '';
+   
+      bestWebtoon.forEach(el => {
+
+          html+=`<li class="best-item">
+                    <a href="${el.url}" class="link-best">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <strong class="webtoon-tit">${el.title}</strong>
+                            <span class="writer">${el.writer}</span>
+                        </div>
+                    </a>
+                </li>`
+      });
+
+      bestList.forEach(el => {
+
+        const isUp = el.up ? upEl : "";
+
+          html2+=`<li class="webtoon-item">
+                    <a href="${el.url}" class="link-webtoon">
+                        <div class="thumbnail">
+                            <img src="${el.imgSrc}" alt="${el.alt}">
+                        </div>
+                        <div class="info-box">
+                            <strong class="webtoon-tit">
+                                ${el.title}
+                                <em class="badge">
+                                  ${isUp}
+                                </em>
+                            </strong>
+                            <span class="writer">${el.writer}</span>
+                            <p class="desc">${el.desc}</p>
+                            <div class="detail">
+                                <span class="score">
+                                    <i class="ic-score">
+                                        <span class="blind">별점</span>
+                                    </i>
+                                    ${el.score}
+                                </span>
+                                <span class="time"><span class="blind">업데이트 날짜</span>${el.time}</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>`
+      });
+
+  
+      const list1 = document.querySelector('#bestchallenge .sc-best .best-list');
+      const list2 = document.querySelector('#bestchallenge .sc-webtoon .webtoon-list');
+
+      list1.innerHTML = html;
+      list2.innerHTML = html2;
   });
 })

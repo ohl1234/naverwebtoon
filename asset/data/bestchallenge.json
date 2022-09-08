@@ -1,0 +1,93 @@
+{
+    "bestWebtoon":[
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/best-thumb1.jpg",
+            "alt" : "새벽인력",
+            "title" :"새벽인력",
+            "writer":"youy****"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/best-thumb2.jpg",
+            "alt" : "일월의 신화",
+            "title" :"일월의 신화",
+            "writer":"mila****"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/best-thumb3.jpg",
+            "alt" : "감성 다방",
+            "title" :"감성 다방",
+            "writer":"crus****"
+        }
+    ],
+    "bestList" : [
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/bestlist-thumb1.jpg",
+            "alt" : "김작가의 오춘기 그림일기",
+            "title" :"김작가의 오춘기 그림일기",
+            "writer":"da****",
+            "up":true,
+            "desc":"오춘기를 앓고 있어요",
+            "score":"9.84",
+            "time":"00:01"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/bestlist-thumb2.jpg",
+            "alt" : "미필은 노하이",
+            "title" :"미필은 노하이",
+            "writer":"mask****",
+            "up":false,  
+            "desc":"대한군필 만세!!",
+            "score":"9.87",
+            "time":"22.09.08"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/bestlist-thumb3.jpg",
+            "alt" : "소중한 하루를 살다",
+            "title" :"소중한 하루를 살다",
+            "writer":"yoon****",
+            "up":false,
+            "desc":"소중한 일상 만들기",
+            "score":"9.75",
+            "time":"22.09.08"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/bestlist-thumb4.jpg",
+            "alt" : "오늘의 난",
+            "title" :"오늘의 난",
+            "writer":"nan_****",
+            "up":false,
+            "desc":"오늘의 난, 난그림",
+            "score":"9.40",
+            "time":"22.09.08"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/bestlist-thumb5.jpg",
+            "alt" : "에이전트",
+            "title" :"에이전트",
+            "writer":"agen****",
+            "up":false,
+            "desc":"대한민국비밀특수요원",
+            "score":"9.69",
+            "time":"22.09.08"
+        },
+        {
+            "url" : "#",
+            "imgSrc" : "./asset/images/bestlist-thumb6.jpg",
+            "alt" : "모두의 단편선",
+            "title" :"모두의 단편선",
+            "writer":"modo****",
+            "up":false,
+            "desc":"모두가함께하는웹툰",
+            "score":"9.86",
+            "time":"22.09.08"
+        }
+    ]
+}
