@@ -1,77 +1,91 @@
 $(function(){
   // u skip event
-  $('#u_skip a').keydown(function(e){
-    key = e.keyCode;
-    if(key === 13){
-      const target = $(this).data('target');
-      const href = $(this).attr('href');
-      
-      $('[data-li='+target+']').addClass('active').siblings().removeClass('active');
-      $(href).addClass('active').siblings().removeClass('active');
+    $('#u_skip a').keydown(function(e){
+        key = e.keyCode;
+        if(key === 13){
+            const target = $(this).data('target');
+            const href = $(this).attr('href');
+            
+            $('[data-li='+target+']').addClass('active').siblings().removeClass('active');
+            $(href).addClass('active').siblings().removeClass('active');
 
-      if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
-        $('.group-weekday').addClass('active');
-      }else{
-        $('.group-weekday').removeClass('active');
-      }
-    }
-  })
+            if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
+            $('.group-weekday').addClass('active');
+            }else{
+            $('.group-weekday').removeClass('active');
+            }
+        }
+    })
   // header scroll event 
-  let lastScroll = 0;
-  $(window).scroll(function(){
+    let lastScroll = 0;
+        $(window).scroll(function(){
 
-    const curr = $(this).scrollTop();
-    const here = $('.container').offset().top;
+        const curr = $(this).scrollTop();
+        const here = $('.container').offset().top;
 
-    if(curr > lastScroll){
-      $('.header').addClass('active');
-      if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
-        $('.header').addClass('active2');
-      }
-    }
-      
-    if(curr <= here + 100){
-      $('.header').removeClass('active');
-      if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
-        $('.header').removeClass('active2');
-      }
-    }
-  });
+        if(curr > lastScroll){
+            $('.header').addClass('active');
+            if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
+            $('.header').addClass('active2');
+            }
+        }
+            
+        if(curr <= here + 100){
+            $('.header').removeClass('active');
+            if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
+            $('.header').removeClass('active2');
+            }
+        }
+    });
 
   // nav click
-  $('.header .group-lnb .tab-lnb').click(function(e){
-      e.preventDefault();
+    $('.header .group-lnb .tab-lnb').click(function(e){
+        e.preventDefault();
 
-      const href = $(this).attr('href');
+        const href = $(this).attr('href');
 
-      $(href).addClass('active').siblings().removeClass('active');
-      $(this).parent().addClass('active').siblings().removeClass('active');
+        $(href).addClass('active').siblings().removeClass('active');
+        $(this).parent().addClass('active').siblings().removeClass('active');
 
-      if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
+        if($('.group-lnb .lnb-item').eq(1).hasClass('active')){
         $('.group-weekday').addClass('active');
-      }else{
+        }else{
         $('.group-weekday').removeClass('active');
-      }
-  })
+        }
+    })
 
-  $('.header .group-weekday .link-weekday').click(function(e){
-    e.preventDefault();
+    $('.header .group-weekday .link-weekday').click(function(e){
+        e.preventDefault();
 
-    $(this).parent().addClass('active').siblings().removeClass('active');
-  })
+        $(this).parent().addClass('active').siblings().removeClass('active');
+    })
 
   // footer click
-  $('.footer .btn-info').click(function(){
-    $('.biz-info-wrap').toggleClass('active');
-    $(this).toggleClass('active');
-  })
+    $('.footer .btn-info').click(function(){
+        $('.biz-info-wrap').toggleClass('active');
+        $(this).toggleClass('active');
+    })
 
   //category click 
-  $('.group-category .btn-tab').click(function(e){
-    e.preventDefault();
+    $('.group-category .btn-tab').click(function(e){
+        e.preventDefault();
 
-    $(this).parent().addClass('active').siblings().removeClass('active');
-  })
+        $(this).parent().addClass('active').siblings().removeClass('active');
+    })
+
+  // select click
+  
+    $('#list-category1').on('change',function(){
+        const optionText = $('#list-category1 option:checked').text();
+        console.log(optionText);
+        $('#weekday .select-tit').text(optionText);
+    });
+    $('#list-category2').on('change',function(){
+        const optionText = $('#list-category2 option:checked').text();
+        console.log(optionText);
+        $('#end .select-tit').text(optionText);
+    });
+
 
   // json 비동기 + swiper slide
 
