@@ -431,7 +431,8 @@ $(function(){
         }
       });
 
-      $('.tab-area a').click(function(){
+      $('.tab-area a').click(function(e){
+        e.preventDefault();
         if ($(this).attr('aria-selected')=="true") {
           swiper1.slideTo(0);
           $('.btn-webtoon').addClass('active').siblings().removeClass('active');
