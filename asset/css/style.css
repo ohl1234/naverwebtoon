@@ -1877,9 +1877,8 @@ input, select, button, fieldset {
   margin-right: auto;
   font-size: 12px;
   font-weight: 500;
-  color: #000;
+  color: transparent;
   line-height: 13px;
-  opacity: 0;
 }
 #weekday .sc-webtoon .link-like {
   position: relative;
@@ -2034,9 +2033,8 @@ input, select, button, fieldset {
   margin-right: auto;
   font-size: 12px;
   font-weight: 500;
-  color: #000;
+  color: transparent;
   line-height: 13px;
-  opacity: 0;
 }
 #end .sc-webtoon .link-like {
   position: relative;
